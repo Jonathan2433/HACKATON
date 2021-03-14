@@ -8,6 +8,6 @@ OUVRIR son dossier avec VScode
 
 SUR LA CONSOLE : 
 
-git clone URL_du_fichier_git ( URL à venir soon )
+git clone https://github.com/Jonathan2433/HACKATON.git 
 
 
