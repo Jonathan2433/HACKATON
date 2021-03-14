@@ -1,0 +1,18 @@
+                                RECAP ET MEMO SCSS :
+
+POUR FAIRE VOTRE SCSS OU VOTRE CSS :
+
+CREER un nouveau fichier sccs commencant toujours pas un underscore :
+
+exemple si vous travaillez sur la page contact : 
+
+_contact.SCSS
+
+IMPORTER ce fichier sur le fichier style.scss :
+
+@import 'contact'; 
+
+(pas besoin de rajouter l'extension ou l'underscore)
+
+VOUS POUVEZ FAIRE VOTRE CSS sur ce fichier (_contact.scss) et LET'S GO my friend.
+

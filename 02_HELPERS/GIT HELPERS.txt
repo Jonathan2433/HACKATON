@@ -1,0 +1,63 @@
+                                            RAPPEL ET MEMO GIT :
+
+!!! AVANT toutes modifications il faut se placer sur sa branch de travail PERSO et si jamais celle-ci n’est pas encore créer il faut le faire !!! :
+
+CREATION DE SA BRANCH : 
+
+    git branch nom_de_ma_branch 
+
+CHANGEMENT DE BRANCH : 
+
+    git checkout nom_de_ma_branch
+
+UNE FOIS ET SEULEMENT UNE FOIS SUR SA BRANCH DE TRAVAIL PERSO ON PEUT CODER
+
+Une fois les modifications ou création faites voici les démarches à faires pour les save sur git : 
+
+AJOUTER SES FICHIERS MODIFIER :
+
+    git add nom_de_mon_fichier.html
+    git add nom_de_mon_fichier.scss
+
+COMMENTER LES MODIFICATIONS FAITES : 
+
+    git commit -m "mes modifications" (ex: "add style" "fix size on imgs" "editing cards" "create navbar")
+
+ENVOYER LES MODIFICATIONS SUR GIT : 
+
+    git push 
+
+( à cette étape si c'est la premiere fois que vous faites un push de votre branch vous aurez un message d'erreur avec dedans une ligne du style git push -set-origin-nom_de_ma_branch il faudra juste copier et coller cette ligne dans votre terminal)
+
+UNE FOIS VOS MODIFICATIONS FAITES SUR VOS BRANCH PERSO IL FAUDRA LES ENVOYER SUR LA BRANCH COMMUNE :
+
+pour ce faire il faudra venir sur la branch commune qui sera la branch dev
+ensuite il faudra mettre à jour cette branch ( car nous aurons de nos coté peut etre enregistré des changements que vous n'aurez pas à jour) 
+ensuite fusionner votre branch perso et enfin envoyer le tout sur git voici l'ordre des commandes : 
+
+    git checkout dev (allez sur la branch dev)
+    git pull (mettre à jour votre branch dev)
+    git merge nom_de_ma_branc (fusionner la branch dev avec votre branch perso)
+    git push
+
+RECAP DANS GENERAL : 
+
+    git add nom_de_mon_fichier.html
+    git add nom_de_mon_fichier.scss
+
+        git commit -m "add menu"
+
+            git push
+
+                git checkout dev
+
+                    git pull 
+
+                        git merge nom_de_ma_branch
+
+                            git push 
+
+
+                 SI JAMAIS VOUS AVEZ UNE HESITATION OU QUESTION DEMANDEZ MOI !
+
+

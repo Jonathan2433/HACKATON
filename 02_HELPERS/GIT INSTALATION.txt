@@ -1,0 +1,13 @@
+                                    GIT INSTALATION :
+
+SUR SON POSTE :
+
+CREER un dossier hackaton à l'emplacement souhaiter 
+
+OUVRIR son dossier avec VScode
+
+SUR LA CONSOLE : 
+
+git clone URL_du_fichier_git ( URL à venir soon )
+
+

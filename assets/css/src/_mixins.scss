@@ -1,0 +1,8 @@
+// fichier des mixins
+@mixin flex($just, $align, $dir: row, $wrap: nowrap) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
