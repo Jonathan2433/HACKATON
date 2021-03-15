@@ -80,7 +80,17 @@ body{
     font-size: 24px;
     background-color: $blue-noir;
     border-radius: 0px 0px 50px 50px;
+    transition: 2s;
     padding: 10px;
+    position: relative;
+    width: -100%;
+    top: -120px;
+    left: -50%;
+    transform: translateX(50%);
+    opacity: 0;
+    
+    
+    
     
     a{
         color: $bg;
@@ -117,6 +127,14 @@ body{
 }
 
 .main-menu-show{
-    visibility: visible;  
+    visibility: visible; 
+    transition: 2s;
+    position: fixed;
+    width: 100%;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+
     
 }
