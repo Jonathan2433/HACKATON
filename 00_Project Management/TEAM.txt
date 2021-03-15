@@ -1,0 +1,9 @@
+TEAM :
+
+SCRUM-MASTER : 
+	- Jonathan 
+Garant du Temps :
+	- Nelson et Tim
+Coach Santé : 
+	- Mathilde
+
