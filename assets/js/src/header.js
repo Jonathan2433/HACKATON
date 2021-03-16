@@ -13,7 +13,6 @@ burger.addEventListener('click', () => {
     secondLine.classList.toggle('change-second-line');
     thirdLine.classList.toggle('change-third-line');
     mainMenu.classList.toggle('main-menu-show');
-
 })
 
 
