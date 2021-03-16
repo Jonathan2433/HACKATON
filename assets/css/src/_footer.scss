@@ -1,7 +1,6 @@
-
 main {
     height: 80vh;
-    background: aqua;
+    background: #BDE5E7;
     border-radius: 0 0 100px 100px;
     transform: translateY(80px);
     
@@ -10,5 +9,5 @@ main {
 footer {
     display: grid;
     height: 20vh;
-    background: black
+    background: $blue-noir;
 }
