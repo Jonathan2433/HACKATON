@@ -50,10 +50,21 @@
         margin: 20px 0px;
     }
 
-    p{
+    span{
+        color: $blue-fonce;
         font-family: $txt;
         font-size: 25px;
-        color: $blue-fonce;
+        display: block;
+        padding: 10px;
+        text-align: center;
+
+        .fa-stopwatch,.fa-graduation-cap,.fa-tasks,.fa-paint-roller{
+            padding-bottom: 5px;
+            color: $blue-noir;
+            display: block;
+        }
+
+        
 
     }
 }
@@ -73,6 +84,95 @@
 }
 /*=============================================MEDIA QUERIES==================================================================================
 =============================================================================================================================================*/
+@media screen and (min-width: 768px) {
+    .project-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 30px;
+        padding: 20px;
+        img{
+            border-radius: 40px;
+            width: 250px;
+            height: 400px;
+        }
+    
+        h2{
+            display: none;
+        }
+
+        p{
+            padding: 25px;
+            color: $blue-fonce;
+            font-family: $txt;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+    }
+
+    .author-photo{
+        border-radius: 100%;
+        width: 200px;
+        height: 200px;
+        float: right;
+        margin-left: 100px;
+        -webkit-shape-outside:circle();
+        shape-outside:circle();
+ 
+        
+    }
+
+    .author-description{
+        text-align: center;
+
+        h2{
+            font-family: $title;
+            font-size: 30px;
+            color: $blue-noir;
+            margin: 20px 0px;
+            text-align: end;
+        }
+    
+        span{
+            font-family: $txt;
+            font-size: 20px;
+            color: $blue-fonce;
+            display: block;
+            padding: 10px;
+            text-align: end;
+
+            .fa-stopwatch,.fa-graduation-cap,.fa-tasks,.fa-paint-roller{
+                margin-right: 15px;
+                display: inline-block;
+            }
+            
+        }
+    }
+
+    #txt-others{
+        text-align: start;
+        font-family: $title;
+        font-size: 20px;
+        clear: both;
+    }
+    
+    .others-projects img{
+        border-radius: 40px;
+        width: 350px;
+        height: 500px;
+    }
+   
+ }
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 992px) {
    
     .project-container{
@@ -80,7 +180,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         padding: 50px;
         img{
             border-radius: 40px;
@@ -106,6 +206,7 @@
         width: 350px;
         height: 350px;
         float: right;
+        margin-left: 300px;
         -webkit-shape-outside:circle();
         shape-outside:circle();
  
@@ -117,7 +218,7 @@
 
         h2{
             font-family: $title;
-            font-size: 30px;
+            font-size: 40px;
             color: $blue-noir;
             margin: 20px 0px;
             text-align: end;
@@ -129,6 +230,13 @@
             color: $blue-fonce;
             display: block;
             padding: 10px;
+            text-align: end;
+
+            .fa-stopwatch,.fa-graduation-cap,.fa-tasks,.fa-paint-roller{
+                margin-right: 15px;
+                display: inline;
+            }
+            
         }
     }
 
