@@ -81,21 +81,17 @@ body{
     font-size: 24px;
     background-color: $blue-noir;
     border-radius: 0px 0px 50px 50px;
-    transition: 2s;
-    padding: 10px;
-    position: relative;
-    width: -100%;
-    top: -120px;
-    left: -50%;
-    transform: translateX(50%);
-    opacity: 0;
+    padding: 5px 0px;
     
     
     
+    li{
+        padding: 5px 0px;
+    }
     
     a{
         color: $bg;
-        padding: 20px;
+        
     }
 
     .first-menu{
@@ -129,13 +125,105 @@ body{
 
 .main-menu-show{
     visibility: visible; 
-    transition: 2s;
-    position: fixed;
-    width: 100%;
-    top: 120px;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 1;
+    
+    
 
     
 }
+/*===================================MEDIA QUERIES====================================================================================
+================================================================================================================================*/
+@media screen and (min-width: 768px) {
+    .web-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+     
+     .burger-bar{
+         display: none;
+         transition: 0;
+     }
+ 
+ 
+     .main-menu{
+         visibility: visible;
+         border-radius: 0px;
+         background-color: transparent;
+         
+         
+ 
+     .first-menu a{color: $blue-noir;
+    display: inline;}
+ 
+     .second-menu{display: none;
+    transition: 0.6s;
+transform: scale(0);}
+
+   #portfolio:hover .second-menu{
+         display: block;
+         transition: 0.6s;
+         position:absolute ;
+         margin: 10px 0;
+         left: 50%;
+         transform: translate(-50% );
+    
+         li{
+             display: block;
+             margin: 0;
+             
+             a{
+                 display: block; 
+                 font-size: 20px;
+             }
+         }  
+     }
+     
+
+     li{
+         display: inline;
+         margin: 0;
+         padding: 0;
+     
+         a{
+             padding: 10px;
+         }  
+   }
+ 
+ }}
+
+@media screen and (min-width: 992px) {
+   .logo{
+       position: absolute;
+       left: 50px;
+   }
+    
+    .burger-bar{
+        display: none;
+        transition: 0;
+    }
+
+
+    .main-menu{
+        visibility: visible;
+        border-radius: 0px;
+        background-color: transparent;
+        padding: 20px;
+        
+        
+
+    .first-menu a{color: $blue-noir;}
+
+    
+    
+
+    li{
+        display: inline;
+        margin: 0;
+        padding: 0;
+    
+        a{
+            padding: 10px;
+        }  
+  }
+
+}}
