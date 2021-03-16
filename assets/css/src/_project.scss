@@ -1,0 +1,151 @@
+#project-section{
+    padding: 10px;
+}
+
+.project-container{
+    margin-bottom: 10px;
+    position: relative;
+    img{
+        border-radius: 40px;
+        width: 100%;
+        height: 336px;
+        margin-bottom: 10px;
+    }
+
+    h2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -90%);
+        color: $blue-fonce;
+        font-family: $title;
+        font-size: 26px;
+    }
+
+    p{
+        color: $blue-fonce;
+        font-family: $txt;
+        font-size: 24px;
+        letter-spacing: 1px;
+        margin: 20px 0px;
+        text-align: center;
+    }
+}
+
+
+.author-photo{
+    margin-bottom: 10px;
+    border-radius: 100%;
+    width: 100%;
+    height: 246px;
+}
+
+.author-description{
+    text-align: center;
+    
+
+    h2{
+        font-family: $title;
+        font-size: 30px;
+        color: $blue-noir;
+        margin: 20px 0px;
+        margin-bottom: 10px;
+    }
+
+    p{
+        font-family: $txt;
+        font-size: 25px;
+        color: $blue-fonce;
+
+    }
+}
+
+#txt-others{
+    text-align: center;
+    margin: 20px auto;
+    font-family: $title;
+    font-size: 20px;
+}
+
+.others-projects img{
+    margin-top: 20px;
+    width: 227px;
+    height: 204px;
+    border-radius: 40px;
+}
+/*=============================================MEDIA QUERIES==================================================================================
+=============================================================================================================================================*/
+@media screen and (min-width: 992px) {
+   
+    .project-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 10px;
+        padding: 50px;
+        img{
+            border-radius: 40px;
+            width: 350px;
+            height: 500px;
+            
+
+        }
+    
+        h2{
+            display: none;
+        }
+
+        p{
+            padding: 150px;
+            color: $blue-fonce;
+            font-family: $txt;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+    }
+
+    .author-photo{
+        border-radius: 100%;
+        width: 350px;
+        height: 350px;
+        float: right;
+        -webkit-shape-outside:circle();
+        shape-outside:circle();
+ 
+        
+    }
+
+    .author-description{
+        text-align: end;
+
+        h2{
+            font-family: $title;
+            font-size: 30px;
+            color: $blue-noir;
+            margin: 20px 0px;
+        }
+    
+        p{
+            font-family: $txt;
+            font-size: 25px;
+            color: $blue-fonce;
+            margin: 0px 150px;
+            
+        
+        }
+    }
+
+    #txt-others{
+        text-align: start;
+        font-family: $title;
+        font-size: 20px;
+        clear: both;
+    }
+    
+    .others-projects img{
+        width: 227px;
+        height: 204px;
+        border-radius: 40px;
+    }
+ }
