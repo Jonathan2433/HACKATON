@@ -9,7 +9,7 @@ body{
     }
 }
 
-header{
+.main-header{
     display: flex;
     justify-content: center;
     align-self: center;
@@ -19,12 +19,18 @@ header{
     
     .burger-bar{
         padding: 25px;
+        
+        &:hover{
+            cursor: pointer;
+        }
+
         .first-line{
             width: 35px;
             height: 3px;
             background-color: $blue-fonce;
             margin: 6px 0px ;
             transition: 0.6s;
+        
         }
     
         .second-line{
@@ -67,3 +73,68 @@ header{
     
 }
 
+.main-menu{
+    text-align: center;
+    visibility: hidden;
+    font-family: $title;
+    font-size: 24px;
+    background-color: $blue-noir;
+    border-radius: 0px 0px 50px 50px;
+    transition: 2s;
+    padding: 10px;
+    position: relative;
+    width: -100%;
+    top: -120px;
+    left: -50%;
+    transform: translateX(50%);
+    opacity: 0;
+    
+    
+    
+    
+    a{
+        color: $bg;
+        padding: 20px;
+    }
+
+    .first-menu{
+        li{
+            margin: 10px 0px;
+               a{
+                &:hover{
+                    text-decoration: underline;
+                }
+               }
+
+            .second-menu{
+                font-family: $txt;
+                font-size: 16px;
+                li{
+                    padding: 5px;
+
+                    a{
+
+                        &:hover{
+                            color:rgb(0, 155, 163);
+                            text-decoration: none !important;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
+
+.main-menu-show{
+    visibility: visible; 
+    transition: 2s;
+    position: fixed;
+    width: 100%;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+
+    
+}
