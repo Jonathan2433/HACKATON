@@ -42,14 +42,12 @@
 
 .author-description{
     text-align: center;
-    
 
     h2{
         font-family: $title;
         font-size: 30px;
         color: $blue-noir;
         margin: 20px 0px;
-        margin-bottom: 10px;
     }
 
     p{
@@ -88,8 +86,6 @@
             border-radius: 40px;
             width: 350px;
             height: 500px;
-            
-
         }
     
         h2{
@@ -117,22 +113,22 @@
     }
 
     .author-description{
-        text-align: end;
+        text-align: center;
 
         h2{
             font-family: $title;
             font-size: 30px;
             color: $blue-noir;
             margin: 20px 0px;
+            text-align: end;
         }
     
-        p{
+        span{
             font-family: $txt;
             font-size: 25px;
             color: $blue-fonce;
-            margin: 0px 150px;
-            
-        
+            display: block;
+            padding: 10px;
         }
     }
 
@@ -144,8 +140,8 @@
     }
     
     .others-projects img{
-        width: 227px;
-        height: 204px;
         border-radius: 40px;
+        width: 350px;
+        height: 500px;
     }
  }
