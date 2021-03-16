@@ -1,18 +1,125 @@
 <!DOCTYPE html>
 <html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Projet Hackaton</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+        <link rel="stylesheet" href="assets/css/dist/style.min.css" />
+        <!-- INSERT HERE LIBRARYS -->
+    </head>
+    <body>
+        <div class="main-header">
+            <div class="logo">
+                <img src="logo_campus_transparent.PNG.png" alt="" />
+            </div>
+            <div class="burger-bar" id="burger">
+                <div class="first-line"></div>
+                <div class="second-line"></div>
+                <div class="third-line"></div>
+            </div>
+        </div>
+        <div class="main-menu" id="main-menu">
+            <ul class="first-menu">
+                <li><a href="#">Accueil</a></li>
+                <li id="portfolio">
+                    <a href="#">Portfolio</a>
+                    <ul class="second-menu" id="secondary-menu">
+                        <li><a href="#">Web Devs</a></li>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Chef Projet Marketing</a></li>
+                        <li><a href="#">Graphiste</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <h2>Bienvenue</h2>
+                        <img
+                            src="./assets/img/src/bg-header.jpg"
+                            alt=""
+                        />
+                    </li>
+                    <li class="splide__slide">
+                        <h2>Bienvenue</h2>
+                        <img
+                        src="./assets/img/src/bg-header.jpg"
+                        alt=""
+                        />
+                    </li>
+                    <li class="splide__slide">
+                        <h2>Bienvenue</h2>
+                        <img
+                        src="./assets/img/src/bg-header.jpg"
+                        alt=""
+                        />
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet Hackaton</title>
-    <link rel="stylesheet" href="assets/css/dist/style.min.css">
-    <!-- INSERT HERE LIBRARYS -->
-</head>
+        <h1 class="title">Derniers Projets</h1>
+        <section id="last-project" class="portfolio">
+            <article class="card">
+                <div class="body-card">
+                    <h2>Section</h2>
+                    <h3>Nom Prénom</h3>
+                    <h4>projet</h4>
+                </div>
+            </article>
+            <article class="card">
+                <div class="body-card">
+                    <h2>Section</h2>
+                    <h3>Nom Prénom</h3>
+                    <h4>projet</h4>
+                </div>
+            </article>
+            <article class="card">
+                <div class="body-card">
+                    <h2>Section</h2>
+                    <h3>Nom Prénom</h3>
+                    <h4>projet</h4>
+                </div>
+            </article>
+            <article class="card">
+                <div class="body-card">
+                    <h2>Section</h2>
+                    <h3>Nom Prénom</h3>
+                    <h4>projet</h4>
+                </div>
+            </article>
+        </section>
+        <h1 class="title">Portfolio</h1>
+        <section class="portfolio">
+            <article id="dev" class="card">
+                <div class="body-card">
+                    <h2>Web Devs</h2>
+                </div>
+            </article>
 
-<body>
-   
-    <script src="./assets/js/dist/scripts.min.js"></script>
-</body>
+            <article id="design" class="card">
+                <div class="body-card">
+                    <h2>Web Design</h2>
+                </div>
+            </article>
 
+            <article id="cpw" class="card">
+                <div class="body-card">
+                    <h2>Chef de Projet WebMarketing</h2>
+                </div>
+            </article>
+            <article id="graph" class="card">
+                <div class="body-card">
+                    <h2>Graphistes</h2>
+                </div>
+            </article>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+        <script src="./assets/js/dist/scripts.min.js"></script>
+    </body>
 </html>
