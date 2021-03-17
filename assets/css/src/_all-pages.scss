@@ -5,6 +5,14 @@
     font-size: 2em;
     margin: 45px auto;
 }
+.title-center {
+    text-align: center;
+    font-family: $title;
+    color: $grey;
+    font-size: 2em;
+    margin: 45px auto;
+}
+
 .img-header {
     background-image:
     linear-gradient(to bottom, rgba(240,174,84,0.3), rgba(240,174,84,0.3)),
