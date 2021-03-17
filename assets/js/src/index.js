@@ -1,4 +1,4 @@
-new Splide( '.splide' ).mount();
+new Splide('.splide').mount();
 
 
 document.addEventListener( 'DOMContentLoaded', function () {
