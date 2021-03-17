@@ -22,7 +22,7 @@
             transform: translate(-50%, -50%);
             color: white;
             font-family: $title;
-            font-size: 1.5em;
+            font-size: 1em;
             z-index: 2;
         }
     }
@@ -138,7 +138,7 @@ article#graph {
 /*==============RESPONSIVE=============*/
 @media screen and (min-width: 576px) {
     #splide-index {
-        margin-top: 200px;
+        margin-top: 50px;
         padding: 0 50px;
         img {
             border-radius: 50px 50px 200px 200px;
@@ -166,7 +166,7 @@ article#graph {
 }
 @media screen and (min-width: 992px) {
     #splide-index {
-        margin-top: 150px;
+        margin-top: 50px;
         padding: 0 50px;
         img {
             border-radius: 50px 50px 200px 200px;

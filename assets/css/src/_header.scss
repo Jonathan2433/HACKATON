@@ -163,6 +163,10 @@ body{
              a{
                  display: block; 
                  font-size: 20px;
+                 color: white;
+                 &:hover {
+                     color: rgb(0, 155, 163);
+                 }
              }
          }  
     }
@@ -173,6 +177,9 @@ body{
          a{
              padding-bottom: 20px;
         } 
+    }
+    .first-menu>li{
+        padding: 20px;
     }
  }}
 
