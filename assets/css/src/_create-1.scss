@@ -1,0 +1,193 @@
+#create1-container {
+    text-align: center;
+    display: block;
+    margin: auto;
+  
+    h2 {
+      font-family: $title;
+      font-size: 18px;
+      color: $blue-fonce;
+      padding: 20px;
+    }
+  
+    input {
+      margin: 10px 20px;
+      width: 240px;
+      padding: 20px;
+      border-radius: 40px;
+      background-color: $blue-fonce;
+      font-family: $txt;
+      font-size: 14px;
+      color: $bg;
+      text-align: center;
+      border: 0;
+      cursor: pointer;
+    }
+  
+    p .next-button {
+      font-family: $title;
+      font-size: 14px;
+      color: #009aa3;
+      background-color: $blue-noir;
+      width: 140px;
+      margin: 10px auto;
+      padding: 20px;
+        border-radius: 40px;
+        display: block;
+        text-align: center;
+  
+      &:hover {
+        background-color: #12294080;
+        color: $bg;
+      }
+    }
+  }
+  
+  /*=============================================MEDIAQUERIES===============================================================================================================================================================================================================================*/
+  @media screen and (min-width: 375px) {
+    #create1-container {
+      text-align: center;
+      display: block;
+      margin: auto;
+  
+      h2 {
+        font-family: $title;
+        font-size: 18px;
+        color: $blue-fonce;
+        padding: 20px 80px;
+      }
+  
+      input {
+        margin: 20px auto;
+        width: 300px;
+        padding: 20px;
+        border-radius: 40px;
+        background-color: $blue-fonce;
+        font-family: $txt;
+        font-size: 14px;
+        color: $bg;
+        text-align: center;
+        border: 0;
+        cursor: pointer;
+        display: block;
+      }
+  
+      p .next-button {
+        font-family: $title;
+        font-size: 14px;
+        color: #009aa3;
+        background-color: $blue-noir;
+        width: 140px;
+        margin: 10px auto;
+        padding: 20px;
+        border-radius: 40px;
+        text-align: center;
+  
+        &:hover {
+          background-color: #12294080;
+          color: $bg;
+        }
+      }
+    }
+  }
+  
+  /*=============================================768===============================================================================================================================================================================================================================*/
+  
+  @media screen and (min-width: 768px) {
+    #create1-container {
+      text-align: center;
+      display: block;
+      margin: 50px auto;
+  
+      h2 {
+        font-family: $title;
+        font-size: 18px;
+        color: $blue-fonce;
+        padding: 20px;
+      }
+  
+      input {
+        margin: 20px auto;
+        width: 360px;
+        padding: 20px;
+        border-radius: 40px;
+        background-color: $blue-fonce;
+        font-family: $txt;
+        font-size: 14px;
+        color: $bg;
+        text-align: center;
+        border: 0;
+        cursor: pointer;
+        display: block;
+      }
+  
+      
+      .next-button {
+        font-family: $title;
+        font-size: 16px;
+        color: #009aa3;
+        background-color: $blue-noir;
+        width: 200px;
+        margin: 10px auto;
+        display: block;
+        padding: 20px;
+        border-radius: 40px;
+  
+        &:hover {
+          background-color: #12294080;
+          color: $bg;
+        }
+      }
+    }
+  }
+  
+  /*=============================================992===============================================================================================================================================================================================================================*/
+  
+  @media screen and (min-width: 992px) {
+    #create1-container {
+      text-align: center;
+      display: block;
+      margin: 50px auto;
+  
+      h2 {
+        font-family: $title;
+        font-size: 20px;
+        color: $blue-fonce;
+        padding: 20px;
+      }
+  
+      input {
+        margin: 20px auto;
+        width: 460px;
+        padding: 20px;
+        border-radius: 40px;
+        background-color: $blue-fonce;
+        font-family: $txt;
+        font-size: 16px;
+        color: $bg;
+        text-align: center;
+        border: 0;
+        cursor: pointer;
+        display: block;
+      }
+  
+    
+      p .next-button {
+        font-family: $title;
+        font-size: 18px;
+        color: #009aa3;
+        background-color: $blue-noir;
+        width: 220px;
+        margin: 10px auto;
+        display: block;
+        padding: 20px;
+        border-radius: 40px;
+  
+        &:hover {
+          background-color: #12294080;
+          color: $bg;
+        }
+      }
+    }
+  }
+  
