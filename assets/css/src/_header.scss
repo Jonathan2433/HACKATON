@@ -151,25 +151,28 @@ body{
          display: block;
          transition: 2.6s;
          position:absolute ;
-         padding: 10px 0px;
+         padding: 20px 0px;
          left: 50%;
          transform: translate(-50% );
+         background-color: #004f734b;
+         border-radius: 0px 0px 50px 50px;
+         border-top: transparent;
          li{
              display: block;
              margin: 0;
              a{
                  display: block; 
-                 font-size: 22px;
+                 font-size: 20px;
              }
          }  
     }
     li{
          display: inline;
-         margin: 0;
-         padding: 0;
+         margin:20px;
+         padding: 0px;
          a{
-             padding: 3px;
-        }  
+             padding-bottom: 20px;
+        } 
     }
  }}
 
@@ -186,12 +189,17 @@ body{
         display: block;
         border-radius: 0px;
         background-color: transparent;
-        padding: 20px;
+        padding: 21px;
         animation: none;
     .first-menu a{color: $blue-noir;}
     li{
         display: inline;
-        margin: 0;
+        margin: 0px;
         padding: 0;
   }
+
+  .first-menu>li{
+      padding: 20px;
+  }
+
 }}
