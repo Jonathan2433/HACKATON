@@ -1,0 +1,33 @@
+.img-header {
+    background: center url(../../img/src/bg-header.jpg) no-repeat;
+    padding: 0 10px;
+    border: 10px solid $bg;
+    background-size: cover;
+    width: 100%;
+    height: 291px;
+    border-radius: 24px 150px 24px 150px;
+    -webkit-border-radius: 24px 150px 24px 150px;
+    -moz-border-radius: 24px 150px 24px 150px;
+    display: flex;
+    h2 {
+        margin: auto;
+        font-size: 1.5em;
+        color: white;
+        font-family: $title;
+    }
+}
+/*=============RESPONSIVE========*/
+@media screen and (min-width: 768px) {
+    .img-header{
+        margin-top: 150px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .img-header {
+        border-radius: 50px 50px 200px 200px;
+        -webkit-border-radius: 50px 50px 200px 200px;
+        -moz-border-radius: 50px 50px 200px 200px;
+        height: 640px;
+    }
+}

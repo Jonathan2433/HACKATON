@@ -1,18 +1,13 @@
 .splide {
     display: flex;
     width: 100%;
+    padding: 0 10px;
     img {
         border-radius: 24px 150px 24px 150px;
         -webkit-border-radius: 24px 150px 24px 150px;
         -moz-border-radius: 24px 150px 24px 150px;
         width : 100%;
         height: auto;
-    }
-    h1 {
-        margin: auto;
-        font-family: $title;
-        color: white;
-        font-size: 1.75em;
     }
     li.splide__slide {
         position: relative;
@@ -57,9 +52,33 @@
         text-align: center;
     }
 }
-
 /*==============RESPONSIVE=============*/
+@media screen and (min-width: 576px) {
+    .splide {
+        padding: 50px;
+    }
+    .portfolio {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        .card {
+            grid-column: span 6;
+        }
+    }
+}
 @media screen and (min-width: 768px) {
+    .portfolio {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        .card {
+            grid-column: span 4;
+        }
+    }
+}
+
+
+@media screen and (min-width: 992px) {
     .splide {
         margin-top: 150px;
         padding: 0 50px;
@@ -70,21 +89,6 @@
             width : 100%;
             height: auto;
             max-height: 640px;
-
         }
     }
-    .portfolio {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        .card {
-            grid-column: span 6;
-        }
-    }
-}
-@media screen and (min-width: 992px) {
-    .portfolio {
-        .card {
-            grid-column: span 3;
-        }
-    }    
 }
