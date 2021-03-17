@@ -42,6 +42,130 @@
   align-items: center;
   flex-direction: column;
 }
+
+//IMAGE  PROJETS ////
+
+#project-sam-1 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.6),
+      rgba(0, 0, 0, 0.7) 70%
+    ),
+    url("./../../img/src/safar-safarov-LKsHwgzyk7c-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6),
+        rgba(0, 0, 0, 0.7) 0%
+      ),
+      url("./../../img/src/safar-safarov-LKsHwgzyk7c-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+#project-sam-2 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.6),
+      rgba(0, 0, 0, 0.7) 70%
+    ),
+    url("./../../img/src/roman-synkevych-vXInUOv1n84-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6),
+        rgba(0, 0, 0, 0.7) 0%
+      ),
+      url("./../../img/src/roman-synkevych-vXInUOv1n84-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+#project-sam-3 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.6),
+      rgba(0, 0, 0, 0.7) 70%
+    ),
+    url("./../../img/src/zan-BTzLUhq4z0U-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6),
+        rgba(0, 0, 0, 0.7) 0%
+      ),
+      url("./../../img/src/zan-BTzLUhq4z0U-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+#project-sam-4 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.6),
+      rgba(0, 0, 0, 0.7) 70%
+    ),
+    url("./../../img/src/campaign-creators-8F4EX4Nw1yY-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6),
+        rgba(0, 0, 0, 0.7) 0%
+      ),
+      url("./../../img/src/campaign-creators-8F4EX4Nw1yY-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+#project-sam-5 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.6),
+      rgba(0, 0, 0, 0.7) 70%
+    ),
+    url("./../../img/src/oscar-nord-MuJHwDHbXUk-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6),
+        rgba(0, 0, 0, 0.7) 0%
+      ),
+      url("./../../img/src/oscar-nord-MuJHwDHbXUk-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+#project-sam-6 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.6),
+      rgba(0, 0, 0, 0.7) 70%
+    ),
+    url("./../../img/src/annie-spratt-QckxruozjRg-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6),
+        rgba(0, 0, 0, 0.7) 0%
+      ),
+      url("./../../img/src/annie-spratt-QckxruozjRg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 // RESPONSIVE
 @media screen and (min-width: 576px) {
   .user-infos {
@@ -68,12 +192,6 @@
     width: 100%;
     justify-content: center;
     font-size: 1rem;
-  }
-  #user-projects {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
   }
 }
 @media screen and (min-width: 992px) {
