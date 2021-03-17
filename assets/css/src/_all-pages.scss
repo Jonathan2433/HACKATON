@@ -55,6 +55,9 @@
         font-size: 1.25em;
         font-family: $title;
         text-align: center;
+        a {
+            color: white;
+        }
     }
 }
 .pagination {

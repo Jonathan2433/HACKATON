@@ -1,4 +1,4 @@
-.splide {
+#splide-index {
     display: flex;
     width: 100%;
     padding: 0 10px;
@@ -137,7 +137,7 @@ article#graph {
 }
 /*==============RESPONSIVE=============*/
 @media screen and (min-width: 576px) {
-    .splide {
+    #splide-index {
         margin-top: 200px;
         padding: 0 50px;
         img {
@@ -165,7 +165,7 @@ article#graph {
     }
 }
 @media screen and (min-width: 992px) {
-    .splide {
+    #splide-index {
         margin-top: 150px;
         padding: 0 50px;
         img {
