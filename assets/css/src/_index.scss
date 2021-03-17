@@ -8,6 +8,10 @@
         -moz-border-radius: 24px 150px 24px 150px;
         width : 100%;
         height: auto;
+        max-width: 1400px;
+        filter: sepia(50%) brightness(80%) hue-rotate(319deg) saturate(150%) contrast(100%);
+        -webkit-filter: sepia(50%) brightness(80%) hue-rotate(319deg) saturate(150%) contrast(100%);
+        -moz-filter: sepia(50%) brightness(80%) hue-rotate(319deg) saturate(150%) contrast(100%);
     }
     li.splide__slide {
         position: relative;
@@ -20,36 +24,6 @@
             font-family: $title;
             font-size: 1.5em;
         }
-    }
-}
-.title {
-    text-align: center;
-    font-family: $title;
-    color: $blue-fonce;
-    font-size: 1.5em;
-    margin: 45px auto;
-}
-.portfolio {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    padding: 25px;
-}
-.card {
-    min-width: 227px;
-    min-height: 204px;
-    background: center url(./../../img/src/dev.jpg) no-repeat;
-    background-size: cover;
-    filter: opacity(0.7);
-    -webkit-filter: opacity(0.8);
-    border-radius: 40px;
-    display: flex;
-    div.body-card{
-        margin:auto;
-        color: white;
-        font-size: 1.25em;
-        font-family: $title;
-        text-align: center;
     }
 }
 /*==============RESPONSIVE=============*/
@@ -67,26 +41,7 @@
 
         }
     }
-    .portfolio {
-        padding: 10px;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        .card {
-            grid-column: span 6;
-        }
-    }
 }
-@media screen and (min-width: 768px) {
-    .portfolio {
-        padding: 10px;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        .card {
-            grid-column: span 4;
-        }
-    }
-}
-
 
 @media screen and (min-width: 992px) {
     .splide {
@@ -98,7 +53,7 @@
             -moz-border-radius: 50px 50px 200px 200px;
             width : 100%;
             height: auto;
-            max-height: 640px;
+            max-height: 400px;
         }
     }
 }
