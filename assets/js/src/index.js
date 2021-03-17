@@ -4,4 +4,5 @@ document.addEventListener('DOMContentLoaded', function () {
     new Splide('.splide').mount();
 });
 
+
 console.log("c'est parti!");
