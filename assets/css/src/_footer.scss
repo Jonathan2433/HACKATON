@@ -1,4 +1,4 @@
-main {
+div.main {
   height: 60vh;
   background: #bde5e7;
   border-radius: 0 0 100px 100px;
@@ -75,6 +75,7 @@ h4 {
   font-family: $txt;
   font-size: 1rem;
   flex-wrap: wrap;
+  padding-top: 20px;
 }
 
 .check {
@@ -116,6 +117,12 @@ h4 {
 
 .checkmark:hover {
   border: 1px solid #446f72;
+}
+#copyright {
+  padding-top: 25px;
+  text-align: center;
+  background: $blue-noir;
+  color: $bg;
 }
 
 #news-btn {
@@ -165,9 +172,6 @@ h4 {
 #campus-log {
   object-fit: cover;
   width: 15%;
-}
-
-#copyright {
 }
 footer a {
   color: $bg;
@@ -305,12 +309,6 @@ footer ul {
     margin-top: 10px;
     width: 90%;
     cursor: pointer;
-  }
-  #copyright {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
   }
 }
 @media screen and (max-width: 576px) {

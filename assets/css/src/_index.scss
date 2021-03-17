@@ -23,9 +23,119 @@
             color: white;
             font-family: $title;
             font-size: 1.5em;
+            z-index: 2;
         }
     }
 }
+article#last-project-1 {
+    background-image:
+    linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)70%),
+    url('./../../img/src/florian-olivo-4hbJ-eymZ1o-unsplash.jpg');
+    background-size: cover;
+    &:hover {
+        background-image:
+        linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)0%),
+        url('./../../img/src/florian-olivo-4hbJ-eymZ1o-unsplash.jpg');
+        background-size: cover;
+    }
+}
+article#last-project-2 {
+    background-image:
+    linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)70%),
+    url('./../../img/src/annie-spratt-QckxruozjRg-unsplash.jpg');
+    background-size: cover;
+    &:hover {
+        background-image:
+        linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)0%),
+        url('./../../img/src/annie-spratt-QckxruozjRg-unsplash.jpg');
+        background-size: cover;
+    }
+}
+article#last-project-3 {
+    background-image:
+    linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)70%),
+    url('./../../img/src/alvaro-reyes-qWwpHwip31M-unsplash.jpg');
+    background-size: cover;
+    &:hover {
+        background-image:
+        linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)0%),
+        url('./../../img/src/alvaro-reyes-qWwpHwip31M-unsplash.jpg');
+        background-size: cover;
+    }
+}
+article#last-project-4 {
+    background-image:
+    linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)70%),
+    url('./../../img/src/halgatewood-com-tZc3vjPCk-Q-unsplash.jpg');
+    background-size: cover;
+    &:hover {
+        background-image:
+        linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)0%),
+        url('./../../img/src/halgatewood-com-tZc3vjPCk-Q-unsplash.jpg');
+        background-size: cover;
+    }
+}
+article#last-project-5 {
+    background-image:
+    linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)70%),
+    url('./../../img/src/stephen-phillips-hostreviews-co-uk-aE0iX-bLCJc-unsplash.jpg');
+    background-size: cover;
+    &:hover {
+        background-image:
+        linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)0%),
+        url('./../../img/src/stephen-phillips-hostreviews-co-uk-aE0iX-bLCJc-unsplash.jpg');
+        background-size: cover;
+    }
+}
+article#last-project-6 {
+    background-image:
+    linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)70%),
+    url('./../../img/src/visual-design-pl9DrjAMV6I-unsplash.jpg');
+    background-size: cover;
+    &:hover {
+        background-image:
+        linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)0%),
+        url('./../../img/src/visual-design-pl9DrjAMV6I-unsplash.jpg');
+        background-size: cover;
+    }
+}
+article#design {
+    background-image:
+    linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)70%),
+    url('./../../img/src/design.jpg');
+    background-size: cover;
+    &:hover {
+        background-image:
+        linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)0%),
+        url('./../../img/src/design.jpg');
+        background-size: cover;
+    }
+}
+article#cpw {
+    background-image:
+    linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)70%),
+    url('./../../img/src/cpw.jpg');
+    background-size: cover;
+    &:hover {
+        background-image:
+        linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)0%),
+        url('./../../img/src/cpw.jpg');
+        background-size: cover;
+    }
+}
+article#graph {
+    background-image:
+    linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)70%),
+    url('./../../img/src/graph.jpg');
+    background-size: cover;
+    &:hover {
+        background-image:
+        linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)0%),
+        url('./../../img/src/graph.jpg');
+        background-size: cover;
+    }
+}
+
 /*==============RESPONSIVE=============*/
 @media screen and (min-width: 576px) {
     .splide {
@@ -38,11 +148,23 @@
             width : 100%;
             height: auto;
             max-height: 640px;
-
         }
     }
 }
-
+@media screen and (min-width: 768px) {
+    .portfolio article#dev {
+        grid-column: span 6;
+    }
+    .portfolio article#design {
+        grid-column: span 6;
+    }
+    .portfolio article#cpw {
+        grid-column: span 6;
+    }
+    .portfolio article#graph {
+        grid-column: span 6;
+    }
+}
 @media screen and (min-width: 992px) {
     .splide {
         margin-top: 150px;
