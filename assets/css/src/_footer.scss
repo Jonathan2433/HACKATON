@@ -1,5 +1,5 @@
 main {
-  height: 65vh;
+  height: 60vh;
   background: #bde5e7;
   border-radius: 0 0 100px 100px;
   transform: translateY(80px);
@@ -31,9 +31,10 @@ h4 {
   padding: 40px;
 }
 
-.title {
+.title-news {
   grid-area: title;
   padding: 20px;
+  color: #009aa3;
 }
 .news-inputs {
   grid-area: form;
@@ -67,9 +68,9 @@ h4 {
 
 #footer {
   display: flex;
-  height: 35vh;
+  height: 40vh;
   background: $blue-noir;
-  align-items: flex-end;
+  align-items: center;
   color: $bg;
   font-family: $txt;
   font-size: 1rem;
@@ -148,22 +149,25 @@ h4 {
 }
 
 #footer-head {
-  height: 50%;
+  height: 70%;
   width: 100%;
   bottom: 0;
-  display: grid;
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 15%;
   justify-content: space-around;
-  align-items: center;
-  margin-bottom: -80px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  // margin-bottom: -80px;
   // margin: 0 10px 0 10px;
 }
 
 #campus-log {
   object-fit: cover;
+  width: 15%;
 }
 
 #copyright {
-  margin-top: 50px;
 }
 footer a {
   color: $bg;
@@ -174,11 +178,17 @@ footer a:hover {
 
 footer ul {
   line-height: 15px;
-  margin-bottom: 30px;
 }
 // RESPONSIVE //////////
 
 @media screen and (max-width: 768px) {
+  #foot-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 1.2rem;
+  }
   main {
     border-radius: 0;
     height: 90vh;
@@ -188,24 +198,26 @@ footer ul {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-radius: 25px 25px 0 0;
   }
   #footer-head {
     display: grid;
-    height: 100%;
+    height: 80%;
     width: 100%;
     grid-template-columns: 1fr;
     justify-items: center;
-    grid-template-rows: 30% 1fr 1fr 1fr;
+    align-items: center;
+    grid-template-rows: 20% 1fr 1fr 1fr;
   }
   #campus-log {
-    width: 20%;
+    width: 30%;
   }
-  .title {
+  .title-news {
     margin: auto;
     font-size: 1.6rem;
+    color: #009aa3;
   }
   #newsletter {
     grid-template-columns: 1fr;
@@ -302,6 +314,9 @@ footer ul {
   }
 }
 @media screen and (max-width: 576px) {
+  #campus-log {
+    width: 40%;
+  }
   .check-text {
     margin: 0;
   }
@@ -312,7 +327,7 @@ footer ul {
   }
 }
 @media screen and (max-width: 320px) {
-  .title {
+  .title-news {
     font-size: 1.2rem;
   }
 
