@@ -60,24 +60,31 @@
         }
     }
 }
-.pagination {
-    margin: 20px auto;
+div.pagination {
+    padding: 25px;
     display: flex;
-    column-gap: 10px;
-    justify-content: center;
-    align-items: center;
-    &:first-child {
-        background-color: $blue-noir !important;
+    flex-direction: row;
+    column-gap: 15px;
+    width: 100%;
+    margin: 30px auto;
+    :first-child {
+    background-color: $blue-noir !important;
     }
     .dot {
-        height: 20px;
-        width: 20px;
-        background-color: $blue-fonce;
-        border-radius: 50%;
-        display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: auto;
+    background-color: $blue-fonce;
     }
-}
-/*=============RESPONSIVE========*/
+    p {
+    color: $blue-fonce;
+    font-family: $txt;
+    font-weight: 500;
+    }
+}/*=============RESPONSIVE========*/
 @media screen and (min-width: 576px) {
     .portfolio {
         padding: 10px;
@@ -86,6 +93,9 @@
         .card {
             grid-column: span 6;
         }
+    }
+    div.pagination {
+        width: 50%;
     }
 }
 @media screen and (min-width: 768px) {
@@ -108,10 +118,10 @@
             min-height: 500px;
         }
     }
-    .pagination {
-        justify-content: flex-end;
-        padding: 10px 140px;
-    }
+    div.pagination {
+        width: 25%;
+        margin: 30px auto;
+    } 
 }
 @media screen and (min-width: 992px) {
     .img-header {
@@ -123,3 +133,6 @@
 }
 
 
+
+
+    
