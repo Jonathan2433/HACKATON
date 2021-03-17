@@ -57,7 +57,8 @@ body{
 }
 
 .main-menu{
-    margin: 0px 10px;
+    margin: 0px 20px;
+    margin-bottom: 40px;
     text-align: center;
     display: none;
     font-family: $title;
@@ -143,8 +144,7 @@ body{
     }    
     .second-menu{
         display: none;
-        transition: 0.6s;
-        transform: scale(0);
+        
     }
     #portfolio:hover .second-menu{
          display: block;
