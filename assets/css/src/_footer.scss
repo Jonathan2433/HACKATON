@@ -172,13 +172,14 @@ h4 {
   justify-content: space-around;
   align-items: flex-end;
   flex-wrap: wrap;
+  position: relative;
   // margin-bottom: -80px;
   // margin: 0 10px 0 10px;
 }
 
 #campus-log {
   object-fit: cover;
-  width: 15%;
+  width: 100%;
 }
 footer a {
   color: $bg;
@@ -190,6 +191,12 @@ footer a:hover {
 footer ul {
   line-height: 15px;
 }
+
+.news-mail,
+.news-name {
+  font-family: $title;
+}
+
 // RESPONSIVE //////////
 
 @media screen and (max-width: 768px) {
@@ -221,12 +228,14 @@ footer ul {
     justify-items: center;
     align-items: center;
     grid-template-rows: 20% 1fr 1fr 1fr;
+    position: relative;
   }
   #campus-log {
     width: 30%;
   }
   .title-news {
-    margin: auto;
+    // margin: auto;
+    font-family: $title;
     font-size: 1.6rem;
     color: #009aa3;
   }
@@ -352,6 +361,10 @@ footer ul {
   }
   #newsletter form {
     margin: auto;
+  }
+  #campus-log {
+    width: 50%;
+    margin: 0;
   }
 }
 

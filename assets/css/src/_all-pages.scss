@@ -1,91 +1,112 @@
 .title {
-    text-align: center;
-    font-family: $title;
-    color: $grey;
-    font-size: 2em;
-    margin: 45px auto;
+  text-align: center;
+  font-family: $title;
+  color: $grey;
+  font-size: 2em;
+  margin: 45px auto;
 }
 .title-center {
-    text-align: center;
-    font-family: $title;
-    color: $grey;
-    font-size: 2em;
-    margin: 45px auto;
+  text-align: center;
+  font-family: $title;
+  color: $grey;
+  font-size: 2em;
+  margin: 45px auto;
 }
 
 .img-header {
-    background-image:
-    linear-gradient(to bottom, rgba(240,174,84,0.3), rgba(240,174,84,0.3)),
-    url('./../../img/src/bg-header.jpg');
-    border: 10px solid $bg;
-    background-size: cover;
-    width: 100%;
-    height: 291px;
-    border-radius: 24px 150px 24px 150px;
-    -webkit-border-radius: 24px 150px 24px 150px;
-    -moz-border-radius: 24px 150px 24px 150px;
-    display: flex;
-    h1 {
-        margin: auto;
-        font-size: 1.5em;
-        color: white;
-        font-family: $title;
-    }
+  background-image: linear-gradient(
+      to bottom,
+      rgba(240, 174, 84, 0.3),
+      rgba(240, 174, 84, 0.3)
+    ),
+    url("./../../img/src/bg-header.jpg");
+  border: 10px solid $bg;
+  background-size: cover;
+  width: 100%;
+  height: 291px;
+  border-radius: 24px 150px 24px 150px;
+  -webkit-border-radius: 24px 150px 24px 150px;
+  -moz-border-radius: 24px 150px 24px 150px;
+  display: flex;
+  h1 {
+    margin: auto;
+    font-size: 1.5em;
+    color: white;
+    font-family: $title;
+  }
 }
 .portfolio {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    padding: 25px;
-    max-width: 1400px;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 25px;
+  max-width: 1400px;
+  margin: auto;
 }
 .card {
-    min-width: 227px;
-    min-height: 204px;
-    background-image:
-    linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)70%),
-    url('./../../img/src/dev.jpg');
+  min-width: 227px;
+  min-height: 204px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.6),
+      rgba(0, 0, 0, 0.7) 70%
+    ),
+    url("./../../img/src/dev.jpg");
+  background-size: cover;
+  border-radius: 40px;
+  display: flex;
+  transition: 0.5s;
+  &:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6),
+        rgba(0, 0, 0, 0.7) 0%
+      ),
+      url("./../../img/src/dev.jpg");
     background-size: cover;
     border-radius: 40px;
     display: flex;
-    transition: .5s;
+    transition: 0.5s;
     box-shadow: $grey 10px 10px 10px;
     &:hover {
-        background-image:
-        linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)0%),
-        url('./../../img/src/dev.jpg');
-        background-size: cover;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.6),
+          rgba(0, 0, 0, 0.7) 0%
+        ),
+        url("./../../img/src/dev.jpg");
+      background-size: cover;
     }
     &:hover .body-card {
-        visibility: visible;
-        transform: scale(1);
+      visibility: visible;
+      transform: scale(1);
     }
-    div.body-card{
-        visibility: hidden;
-        transform: scale(0.2);
-        margin:auto;
+    div.body-card {
+      visibility: hidden;
+      transform: scale(0.2);
+      margin: auto;
+      color: white;
+      font-size: 1.25em;
+      font-family: $title;
+      text-align: center;
+      transition: 0.5s ease-in-out;
+      a {
         color: white;
-        font-size: 1.25em;
-        font-family: $title;
-        text-align: center;
-        transition: .5s ease-in-out;
-        a {
-            color: white;
-        }
+      }
     }
+  }
 }
 div.pagination {
-    padding: 25px;
-    display: flex;
-    flex-direction: row;
-    column-gap: 15px;
-    width: 100%;
-    margin: 30px auto;
-    :first-child {
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  width: 100%;
+  margin: 30px auto;
+  :first-child {
     background-color: $blue-noir !important;
-    }
-    .dot {
+  }
+  .dot {
     cursor: pointer;
     height: 20px;
     width: 20px;
@@ -95,63 +116,66 @@ div.pagination {
     margin: auto;
     background-color: $blue-fonce;
     &:hover {
-        background-color: $grey;
+      background-color: $grey;
     }
-    }
-    p {
+  }
+  p {
     color: $blue-fonce;
     font-family: $txt;
     font-weight: 500;
-    }
-}/*=============RESPONSIVE========*/
+  }
+
+  .networks-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+} /*=============RESPONSIVE========*/
 @media screen and (min-width: 576px) {
-    .portfolio {
-        padding: 10px;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        .card {
-            grid-column: span 6;
-        }
+  .portfolio {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    .card {
+      grid-column: span 6;
     }
-    div.pagination {
-        width: 50%;
-    }
+  }
+  div.pagination {
+    width: 50%;
+  }
 }
 @media screen and (min-width: 768px) {
-    .img-header{
-        margin: 50px 0 50px 0;
-        h1 {
-            font-size: 2em;
-        }
+  .img-header {
+    margin: 50px 0 50px 0;
+    h1 {
+      font-size: 2em;
     }
-    .title {
-        text-align: left;
-        margin: 45px 140px;
+  }
+  .title {
+    text-align: left;
+    margin: 45px 140px;
+  }
+  .portfolio {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    .card {
+      grid-column: span 4;
+      min-height: 500px;
     }
-    .portfolio {
-        padding: 10px;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        .card {
-            grid-column: span 4;
-            min-height: 500px;
-        }
-    }
-    div.pagination {
-        width: 25%;
-        margin: 30px auto;
-    } 
+  }
+  div.pagination {
+    width: 25%;
+    margin: 30px auto;
+  }
 }
 @media screen and (min-width: 992px) {
-    .img-header {
-        border-radius: 50px 50px 200px 200px;
-        -webkit-border-radius: 50px 50px 200px 200px;
-        -moz-border-radius: 50px 50px 200px 200px;
-        height: 500px;
-    }
+  .img-header {
+    border-radius: 50px 50px 200px 200px;
+    -webkit-border-radius: 50px 50px 200px 200px;
+    -moz-border-radius: 50px 50px 200px 200px;
+    height: 500px;
+  }
 }
-
-
-
-
-    
