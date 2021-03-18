@@ -1,180 +1,288 @@
 #splide-index {
-    display: flex;
+  display: flex;
+  width: 100%;
+  padding: 0 10px;
+  img {
+    border-radius: 24px 150px 24px 150px;
+    -webkit-border-radius: 24px 150px 24px 150px;
+    -moz-border-radius: 24px 150px 24px 150px;
     width: 100%;
-    padding: 0 10px;
-    img {
-        border-radius: 24px 150px 24px 150px;
-        -webkit-border-radius: 24px 150px 24px 150px;
-        -moz-border-radius: 24px 150px 24px 150px;
-        width : 100%;
-        height: auto;
-        max-width: 1400px;
-        filter: sepia(50%) brightness(80%) hue-rotate(319deg) saturate(150%) contrast(100%);
-        -webkit-filter: sepia(50%) brightness(80%) hue-rotate(319deg) saturate(150%) contrast(100%);
-        -moz-filter: sepia(50%) brightness(80%) hue-rotate(319deg) saturate(150%) contrast(100%);
+    height: auto;
+    max-width: 1400px;
+    filter: sepia(50%) brightness(80%) hue-rotate(319deg) saturate(150%)
+      contrast(100%);
+    -webkit-filter: sepia(50%) brightness(80%) hue-rotate(319deg) saturate(150%)
+      contrast(100%);
+    -moz-filter: sepia(50%) brightness(80%) hue-rotate(319deg) saturate(150%)
+      contrast(100%);
+  }
+  li.splide__slide {
+    position: relative;
+    h2 {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-family: $title;
+      font-size: 1em;
+      z-index: 2;
     }
-    li.splide__slide {
-        position: relative;
-        h2 {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-family: $title;
-            font-size: 1em;
-            z-index: 2;
-        }
-    }
+  }
 }
 article#last-project-1 {
-    background-image:
-    linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)70%),
-    url('./../../img/src/florian-olivo-4hbJ-eymZ1o-unsplash.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.6),
+      rgba(0, 0, 0, 0.7) 70%
+    ),
+    url("./../../img/src/florian-olivo-4hbJ-eymZ1o-unsplash.jpg");
+  background-size: cover;
+  &:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6),
+        rgba(0, 0, 0, 0.7) 0%
+      ),
+      url("./../../img/src/florian-olivo-4hbJ-eymZ1o-unsplash.jpg");
     background-size: cover;
-    &:hover {
-        background-image:
-        linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)0%),
-        url('./../../img/src/florian-olivo-4hbJ-eymZ1o-unsplash.jpg');
-        background-size: cover;
-    }
+  }
 }
 article#last-project-2 {
-    background-image:
-    linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)70%),
-    url('./../../img/src/annie-spratt-QckxruozjRg-unsplash.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.6),
+      rgba(0, 0, 0, 0.7) 70%
+    ),
+    url("./../../img/src/annie-spratt-QckxruozjRg-unsplash.jpg");
+  background-size: cover;
+  &:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6),
+        rgba(0, 0, 0, 0.7) 0%
+      ),
+      url("./../../img/src/annie-spratt-QckxruozjRg-unsplash.jpg");
     background-size: cover;
-    &:hover {
-        background-image:
-        linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)0%),
-        url('./../../img/src/annie-spratt-QckxruozjRg-unsplash.jpg');
-        background-size: cover;
-    }
+  }
 }
 article#last-project-3 {
-    background-image:
-    linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)70%),
-    url('./../../img/src/alvaro-reyes-qWwpHwip31M-unsplash.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.6),
+      rgba(0, 0, 0, 0.7) 70%
+    ),
+    url("./../../img/src/alvaro-reyes-qWwpHwip31M-unsplash.jpg");
+  background-size: cover;
+  &:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6),
+        rgba(0, 0, 0, 0.7) 0%
+      ),
+      url("./../../img/src/alvaro-reyes-qWwpHwip31M-unsplash.jpg");
     background-size: cover;
-    &:hover {
-        background-image:
-        linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)0%),
-        url('./../../img/src/alvaro-reyes-qWwpHwip31M-unsplash.jpg');
-        background-size: cover;
-    }
+  }
 }
 article#last-project-4 {
-    background-image:
-    linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)70%),
-    url('./../../img/src/halgatewood-com-tZc3vjPCk-Q-unsplash.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.6),
+      rgba(0, 0, 0, 0.7) 70%
+    ),
+    url("./../../img/src/halgatewood-com-tZc3vjPCk-Q-unsplash.jpg");
+  background-size: cover;
+  &:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6),
+        rgba(0, 0, 0, 0.7) 0%
+      ),
+      url("./../../img/src/halgatewood-com-tZc3vjPCk-Q-unsplash.jpg");
     background-size: cover;
-    &:hover {
-        background-image:
-        linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)0%),
-        url('./../../img/src/halgatewood-com-tZc3vjPCk-Q-unsplash.jpg');
-        background-size: cover;
-    }
+  }
 }
 article#last-project-5 {
-    background-image:
-    linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)70%),
-    url('./../../img/src/stephen-phillips-hostreviews-co-uk-aE0iX-bLCJc-unsplash.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.6),
+      rgba(0, 0, 0, 0.7) 70%
+    ),
+    url("./../../img/src/stephen-phillips-hostreviews-co-uk-aE0iX-bLCJc-unsplash.jpg");
+  background-size: cover;
+  &:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6),
+        rgba(0, 0, 0, 0.7) 0%
+      ),
+      url("./../../img/src/stephen-phillips-hostreviews-co-uk-aE0iX-bLCJc-unsplash.jpg");
     background-size: cover;
-    &:hover {
-        background-image:
-        linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)0%),
-        url('./../../img/src/stephen-phillips-hostreviews-co-uk-aE0iX-bLCJc-unsplash.jpg');
-        background-size: cover;
-    }
+  }
 }
 article#last-project-6 {
-    background-image:
-    linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)70%),
-    url('./../../img/src/visual-design-pl9DrjAMV6I-unsplash.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.6),
+      rgba(0, 0, 0, 0.7) 70%
+    ),
+    url("./../../img/src/visual-design-pl9DrjAMV6I-unsplash.jpg");
+  background-size: cover;
+  &:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6),
+        rgba(0, 0, 0, 0.7) 0%
+      ),
+      url("./../../img/src/visual-design-pl9DrjAMV6I-unsplash.jpg");
     background-size: cover;
-    &:hover {
-        background-image:
-        linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)0%),
-        url('./../../img/src/visual-design-pl9DrjAMV6I-unsplash.jpg');
-        background-size: cover;
-    }
+  }
 }
 article#design {
-    background-image:
-    linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)70%),
-    url('./../../img/src/design.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.6),
+      rgba(0, 0, 0, 0.7) 70%
+    ),
+    url("./../../img/src/design.jpg");
+  background-size: cover;
+  &:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6),
+        rgba(0, 0, 0, 0.7) 0%
+      ),
+      url("./../../img/src/design.jpg");
     background-size: cover;
-    &:hover {
-        background-image:
-        linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)0%),
-        url('./../../img/src/design.jpg');
-        background-size: cover;
-    }
+  }
 }
 article#cpw {
-    background-image:
-    linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)70%),
-    url('./../../img/src/cpw.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.6),
+      rgba(0, 0, 0, 0.7) 70%
+    ),
+    url("./../../img/src/cpw.jpg");
+  background-size: cover;
+  &:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6),
+        rgba(0, 0, 0, 0.7) 0%
+      ),
+      url("./../../img/src/cpw.jpg");
     background-size: cover;
-    &:hover {
-        background-image:
-        linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)0%),
-        url('./../../img/src/cpw.jpg');
-        background-size: cover;
-    }
+  }
 }
 article#graph {
-    background-image:
-    linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)70%),
-    url('./../../img/src/graph.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.6),
+      rgba(0, 0, 0, 0.7) 70%
+    ),
+    url("./../../img/src/graph.jpg");
+  background-size: cover;
+  &:hover {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6),
+        rgba(0, 0, 0, 0.7) 0%
+      ),
+      url("./../../img/src/graph.jpg");
     background-size: cover;
-    &:hover {
-        background-image:
-        linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)0%),
-        url('./../../img/src/graph.jpg');
-        background-size: cover;
-    }
+  }
 }
+
+// icones footer //////////////////////
+
+.networks-icons-mobile {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  font-size: 3rem;
+  gap: 10px;
+  top: 20px;
+  left: 95%;
+  transform: translateX(-100%);
+}
+.networks-icons-large {
+  display: none;
+  margin-right: 20px;
+}
+.networks-icons-large i:hover,
+.networks-icons-mobile i:hover {
+  color: white;
+}
+#campus-logo-mobile {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 50px;
+}
+
 /*==============RESPONSIVE=============*/
 @media screen and (min-width: 576px) {
-    #splide-index {
-        margin-top: 50px;
-        padding: 0 50px;
-        img {
-            border-radius: 50px 50px 200px 200px;
-            -webkit-border-radius: 50px 50px 200px 200px;
-            -moz-border-radius: 50px 50px 200px 200px;
-            width : 100%;
-            height: auto;
-            max-height: 640px;
-        }
+  #splide-index {
+    margin-top: 50px;
+    padding: 0 50px;
+    img {
+      border-radius: 50px 50px 200px 200px;
+      -webkit-border-radius: 50px 50px 200px 200px;
+      -moz-border-radius: 50px 50px 200px 200px;
+      width: 100%;
+      height: auto;
+      max-height: 640px;
     }
+  }
 }
 @media screen and (min-width: 768px) {
-    .portfolio article#dev {
-        grid-column: span 6;
-    }
-    .portfolio article#design {
-        grid-column: span 6;
-    }
-    .portfolio article#cpw {
-        grid-column: span 6;
-    }
-    .portfolio article#graph {
-        grid-column: span 6;
-    }
+  .portfolio article#dev {
+    grid-column: span 6;
+  }
+  .portfolio article#design {
+    grid-column: span 6;
+  }
+  .portfolio article#cpw {
+    grid-column: span 6;
+  }
+  .portfolio article#graph {
+    grid-column: span 6;
+  }
+  .networks-icons-mobile {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-size: 2rem;
+    gap: 10px;
+  }
+  .networks-icons-large {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-size: 1.5rem;
+    gap: 10px;
+  }
+  .large-links {
+    display: flex;
+  }
+  #campus-logo-mobile {
+    width: 15%;
+    display: flex;
+    margin: 0;
+  }
 }
 @media screen and (min-width: 992px) {
-    #splide-index {
-        margin-top: 50px;
-        padding: 0 50px;
-        img {
-            border-radius: 50px 50px 200px 200px;
-            -webkit-border-radius: 50px 50px 200px 200px;
-            -moz-border-radius: 50px 50px 200px 200px;
-            width : 100%;
-            height: auto;
-            max-height: 400px;
-        }
+  #splide-index {
+    margin-top: 50px;
+    padding: 0 50px;
+    img {
+      border-radius: 50px 50px 200px 200px;
+      -webkit-border-radius: 50px 50px 200px 200px;
+      -moz-border-radius: 50px 50px 200px 200px;
+      width: 100%;
+      height: auto;
+      max-height: 400px;
     }
+  }
 }
