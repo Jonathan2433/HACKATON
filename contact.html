@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projet Hackaton</title>
-    <link rel="stylesheet" href="assets/css/dist/style.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" />
-    <!-- INSERT HERE LIBRARYS -->
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Projet Hackaton</title>
+        <link rel="stylesheet" href="assets/css/dist/style.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+        />
+        <!-- INSERT HERE LIBRARYS -->
+    </head>
     <body>
         <!-- MENU -->
         <header class="main-header">
             <div class="logo">
-                <img src="/assets/img/src/logo_campus_transparent.PNG.png" alt="">
+                <img
+                    src="/assets/img/src/logo_campus_transparent.PNG.png"
+                    alt=""
+                />
             </div>
             <div class="burger-bar" id="burger">
                 <div class="first-line"></div>
@@ -29,21 +35,39 @@
                 <li id="portfolio">
                     <a>Portfolio</a>
                     <ul class="second-menu" id="secondary-menu">
-                        <li><a href="portfolio-section-dev.html">Web Devs</a></li>
-                        <li><a href="portfolio-section-design.html">Web Design</a></li>
-                        <li><a href="portfolio-section-cpw.html">Chef Projet Marketing</a></li>
-                        <li><a href="portfolio-section-graph.html">Graphiste</a></li>
+                        <li>
+                            <a href="portfolio-section-dev.html">Web Devs</a>
+                        </li>
+                        <li>
+                            <a href="portfolio-section-design.html"
+                                >Web Design</a
+                            >
+                        </li>
+                        <li>
+                            <a href="portfolio-section-cpw.html"
+                                >Chef Projet Marketing</a
+                            >
+                        </li>
+                        <li>
+                            <a href="portfolio-section-graph.html">Graphiste</a>
+                        </li>
                     </ul>
                 </li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <h2 id="contitle">Contact</h2>
+        <div class="img-header">
+            <h1>Contact</h1>
+        </div>
         <!-- MAP -->
         <div id="contact-info">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.3104353462345!2d-0.5765514845907144!3d44.87633107909833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55284f879cb9b9%3A0xd03cd5adf2ce0b8e!2sCampus%20du%20Lac!5e0!3m2!1sfr!2sfr!4v1616020555534!5m2!1sfr!2sfr"
-                style="border:0;" allowfullscreen="" loading="lazy" id=contact-map></iframe>
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                id="contact-map"
+            ></iframe>
             <div id="contact-adress">
                 <ul>
                     <li>Campus du Lac Rive gauche</li>
@@ -66,23 +90,38 @@
         <section id="contact-box">
             <form action="#" class="contact-form">
                 <h3>Contactez-nous!</h3>
-                <Label for="contact-mail">
-                    <input type="email" name="contact-mail" id="contact-mail" placeholder="E-mail">
-                </Label>
+                <label for="contact-mail">
+                    <input
+                        type="email"
+                        name="contact-mail"
+                        id="contact-mail"
+                        placeholder="E-mail"
+                    />
+                </label>
                 <label for="contact-name">
-                    <input type="text" name="contact-name" id="contact-name" placeholder="Nom prénom">
+                    <input
+                        type="text"
+                        name="contact-name"
+                        id="contact-name"
+                        placeholder="Nom prénom"
+                    />
                 </label>
                 <label for="contact-message">
-                    <textarea name="contact-message" id="contact-message" cols="25" rows="10"></textarea>
+                    <textarea
+                        name="contact-message"
+                        id="contact-message"
+                        cols="25"
+                        rows="10"
+                    ></textarea>
                 </label>
                 <label class="check" id="contact-check">
-                    <input type="checkbox" name="conditions" id="conds">
+                    <input type="checkbox" name="conditions" id="conds" />
                     <span class="checkmark" id="contact-checkmark"></span>
-                    En cochant cette case j'accepte les termes et
-                    conditions d'utilisations
+                    En cochant cette case j'accepte les termes et conditions
+                    d'utilisations
                 </label>
                 <label for="contact-btn">
-                    <input type="submit" name="contact-btn" id="contact-btn">
+                    <input type="submit" name="contact-btn" id="contact-btn" />
                 </label>
             </form>
         </section>
@@ -90,14 +129,30 @@
             <div id="newsletter">
                 <h4 class="title title-news">Newsletter</h4>
                 <form action="" class="news-inputs">
-                    <label class="news-name">Nom / Prénom :
-                        <input type="text" name="news-name" id="news-name" placeholder="Votre prénom et nom ici " />
+                    <label class="news-name"
+                        >Nom / Prénom :
+                        <input
+                            type="text"
+                            name="news-name"
+                            id="news-name"
+                            placeholder="Votre prénom et nom ici "
+                        />
                     </label>
                     <label class="news-name-mobile">
-                        <input type="text" name="news-name" id="news-name" placeholder="Nom prénom" />
+                        <input
+                            type="text"
+                            name="news-name"
+                            id="news-name"
+                            placeholder="Nom prénom"
+                        />
                     </label>
-                    <label class="news-mail">E-mail:
-                        <input type="email" name="mail" placeholder="Votre email ici" />
+                    <label class="news-mail"
+                        >E-mail:
+                        <input
+                            type="email"
+                            name="mail"
+                            placeholder="Votre email ici"
+                        />
                     </label>
                     <label class="news-mail-mobile">
                         <input type="email" name="mail" placeholder="E-mail:" />
@@ -111,8 +166,10 @@
                     <label class="check-mobile">
                         <input type="checkbox" name="conditions" id="conds" />
                         <span class="checkmark"></span>
-                        <span class="check-text">J'accepte les conditions d'utilisations générales
-                            d'utilisation du site</span>
+                        <span class="check-text"
+                            >J'accepte les conditions d'utilisations générales
+                            d'utilisation du site</span
+                        >
                     </label>
                     <div id="news-btn">S'inscrire</div>
                 </form>
@@ -123,37 +180,68 @@
             <div id="footer">
                 <div id="footer-head">
                     <div id="campus-logo-mobile">
-                        <img src="./assets/img/src/logo-white.svg" alt="logo-campus" id="campus-log" />
+                        <img
+                            src="./assets/img/src/logo-white.svg"
+                            alt="logo-campus"
+                            id="campus-log"
+                        />
                     </div>
                     <ul class="networks-icons-mobile">
-                        <li><a href="https://www.instagram.com/campusdulac/?hl=fr"><i
-                                    class="fab fa-instagram"></i></a>
+                        <li>
+                            <a
+                                href="https://www.instagram.com/campusdulac/?hl=fr"
+                                ><i class="fab fa-instagram"></i
+                            ></a>
                         </li>
-                        <li><a href="https://www.facebook.com/campusdulac/"><i class="fab fa-facebook-f"></i></a>
+                        <li>
+                            <a href="https://www.facebook.com/campusdulac/"
+                                ><i class="fab fa-facebook-f"></i
+                            ></a>
                         </li>
-                        <li><a href="https://twitter.com/campusdulac?lang=fr"><i class="fab fa-twitter"></i></a>
+                        <li>
+                            <a href="https://twitter.com/campusdulac?lang=fr"
+                                ><i class="fab fa-twitter"></i
+                            ></a>
                         </li>
-                        <li><a
-                                href="https://www.linkedin.com/company/campus-du-lac-formation-professionnelle/?originalSubdomain=fr"><i
-                                    class="fab fa-linkedin-in"></i></a></li>
+                        <li>
+                            <a
+                                href="https://www.linkedin.com/company/campus-du-lac-formation-professionnelle/?originalSubdomain=fr"
+                                ><i class="fab fa-linkedin-in"></i
+                            ></a>
+                        </li>
                     </ul>
                     <div class="large-links">
                         <ul class="networks-icons-large">
-                            <li><a href="https://www.instagram.com/campusdulac/?hl=fr"><i
-                                        class="fab fa-instagram"></i></a>
+                            <li>
+                                <a
+                                    href="https://www.instagram.com/campusdulac/?hl=fr"
+                                    ><i class="fab fa-instagram"></i
+                                ></a>
                             </li>
-                            <li><a href="https://www.facebook.com/campusdulac/"><i
-                                        class="fab fa-facebook-f"></i></a> </li>
-                            <li><a href="https://twitter.com/campusdulac?lang=fr"><i class="fab fa-twitter"></i></a>
+                            <li>
+                                <a href="https://www.facebook.com/campusdulac/"
+                                    ><i class="fab fa-facebook-f"></i
+                                ></a>
                             </li>
-                            <li><a
-                                    href="https://www.linkedin.com/company/campus-du-lac-formation-professionnelle/?originalSubdomain=fr"><i
-                                        class="fab fa-linkedin-in"></i></a></li>
+                            <li>
+                                <a
+                                    href="https://twitter.com/campusdulac?lang=fr"
+                                    ><i class="fab fa-twitter"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://www.linkedin.com/company/campus-du-lac-formation-professionnelle/?originalSubdomain=fr"
+                                    ><i class="fab fa-linkedin-in"></i
+                                ></a>
+                            </li>
                         </ul>
                         <ul id="foot-links">
                             <li><a href="cgu.html">CGU</a></li>
                             <li><a href="contact.html">Contact</a></li>
-                            <li><a href="mention.html"> Mentions légales </a></li>
+                            <li>
+                                <a href="mention.html"> Mentions légales </a>
+                            </li>
                         </ul>
                     </div>
                     <ul>
@@ -171,7 +259,9 @@
                         <li>Telephone: 05 56 79 52 00</li>
                     </ul>
                 </div>
-                <p id="copyright">Copyright © All rights reserved 2021 Team 4</p>
+                <p id="copyright">
+                    Copyright © All rights reserved 2021 Team 4
+                </p>
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
