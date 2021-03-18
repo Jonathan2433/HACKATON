@@ -16,7 +16,7 @@
 .img-header {
     background-image:
     linear-gradient(to bottom, rgba(240,174,84,0.3), rgba(240,174,84,0.3)),
-    url('./../../img/src/bg-header.jpg');
+    url('./../../img/dist/bg-header.jpg');
     border: 10px solid $bg;
     background-size: cover;
     width: 100%;
@@ -45,7 +45,7 @@
     min-height: 204px;
     background-image:
     linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)70%),
-    url('./../../img/src/dev.jpg');
+    url('./../../img/dist/dev.jpg');
     background-size: cover;
     border-radius: 40px;
     display: flex;
@@ -54,7 +54,7 @@
     &:hover {
         background-image:
         linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(0,0,0,0.7)0%),
-        url('./../../img/src/dev.jpg');
+        url('./../../img/dist/dev.jpg');
         background-size: cover;
     }
     &:hover .body-card {

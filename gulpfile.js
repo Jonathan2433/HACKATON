@@ -65,7 +65,7 @@ gulp.task('image', function() {  // concatenation et optimisation des images
 	return gulp.src('assets/img/src/**/*') // jpeg, jpg, png, svg
 	.pipe(imagemin([
 	    imagemin.gifsicle({interlaced: true}),
-	    imagemin.mozjpeg({quality: 75, progressive: true}),
+	    imagemin.mozjpeg({quality: 50, progressive: true}),
 	    imagemin.optipng({optimizationLevel: 5}),
 	    imagemin.svgo({
 	        plugins: [
