@@ -19,7 +19,7 @@
       rgba(240, 174, 84, 0.3),
       rgba(240, 174, 84, 0.3)
     ),
-    url("./../../img/dist/bg-header.jpg");
+    url("./../../img/src/bg-header.jpg");
   border: 10px solid $bg;
   background-size: cover;
   width: 100%;
@@ -38,21 +38,21 @@
 .portfolio {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  // gap: 50px; GAP DIDN'T WORK ON GOOGLE CHROME
   padding: 25px;
   max-width: 1400px;
   margin: auto;
 }
 .card {
+  margin: 50px auto;
   min-width: 227px;
   min-height: 204px;
-  box-shadow: $grey 10px 10px 10px;
   background-image: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.6),
       rgba(0, 0, 0, 0.7) 70%
     ),
-    url("./../../img/dist/dev.jpg");
+    url("./../../img/src/dev.jpg");
   background-size: cover;
   border-radius: 40px;
   display: flex;
@@ -63,30 +63,30 @@
         rgba(255, 255, 255, 0.6),
         rgba(0, 0, 0, 0.7) 0%
       ),
-      url("./../../img/dist/dev.jpg");
+      url("./../../img/src/dev.jpg");
     background-size: cover;
     border-radius: 40px;
     display: flex;
     transition: 0.5s;
+    box-shadow: $grey 10px 10px 10px;
+    &:hover .body-card {
+      visibility: visible;
+      transform: scale(1);
+    }
   }
-  &:hover .body-card {
-    visibility: visible;
-    transform: scale(1);
-  }
-  div.body-card {
-    visibility: hidden;
-    transform: scale(0.2);
-    margin: auto;
-    color: white;
-    font-size: 1.25em;
-    font-family: $title;
-    text-align: center;
-    transition: 0.5s ease-in-out;
-    a {
+    div.body-card {
+      margin: auto;
       color: white;
+      font-size: 1.25em;
+      font-family: $title;
+      text-align: center;
+      transition: 0.5s ease-in-out;
+      a {
+        color: white;
     }
   }
 }
+
 div.pagination {
   padding: 25px;
   display: flex;
@@ -168,5 +168,30 @@ div.pagination {
     -webkit-border-radius: 50px 50px 200px 200px;
     -moz-border-radius: 50px 50px 200px 200px;
     height: 500px;
+  }
+  .portfolio {
+    gap : 50px;
+    margin: 0;
+  }
+  .card {
+    &:hover {
+      &:hover .body-card {
+        visibility: visible;
+        transform: scale(1);
+      }
+    }
+      div.body-card {
+        visibility: hidden;
+        transform: scale(0.2);
+        margin: auto;
+        color: white;
+        font-size: 1.25em;
+        font-family: $title;
+        text-align: center;
+        transition: 0.5s ease-in-out;
+        a {
+          color: white;
+      }
+    }
   }
 }

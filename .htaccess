@@ -1,0 +1,5 @@
+ErrorDocument 404 /page-404.html
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{https://portfolio-du-lac.000webhostapp.com/} [L,R=301]
