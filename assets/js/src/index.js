@@ -4,4 +4,3 @@ new Splide( '.splide' ).mount();
 
 });
 
-console.log('GIT STASH FOREVER ❤')
