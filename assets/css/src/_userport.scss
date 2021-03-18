@@ -1,203 +1,203 @@
 #user-port-img {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 #user-port-img img {
-  border-radius: 50%;
-  width: 246px;
-  height: 246px;
-  box-shadow: $grey 10px 10px 10px;
+    border-radius: 50%;
+    width: 246px;
+    height: 246px;
+    box-shadow: $grey 10px 10px 10px;
 
-  border: 1px solid $blue-fonce;
+    border: 1px solid $blue-fonce;
 }
 .user-title {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  color: $blue-noir;
-  font-family: $title;
-  font-size: 1.4rem;
-  margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: $blue-noir;
+    font-family: $title;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
 }
 .user-text {
-  font-family: $txt;
-  color: $blue-fonce;
-  padding: 15px;
-  font-size: 1.3rem;
-  display: flex;
-  justify-content: center;
+    font-family: $txt;
+    color: $blue-fonce;
+    padding: 15px;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
 }
 .user-text p {
-  width: 80%;
+    width: 80%;
 }
 .project-title {
-  margin-top: 10px;
-  font-size: 1rem;
-  color: $blue-noir;
-  font-family: $title;
-  margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: $blue-noir;
+    font-family: $title;
+    margin-bottom: 20px;
 }
 #user-projects {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 //IMAGE  PROJETS ////
 
 #project-sam-1 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.6),
-      rgba(0, 0, 0, 0.7) 70%
-    ),
-    url("./../../img/dist/safar-safarov-LKsHwgzyk7c-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  &:hover {
     background-image: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.6),
-        rgba(0, 0, 0, 0.7) 0%
-      ),
-      url("./../../img/dist/safar-safarov-LKsHwgzyk7c-unsplash.jpg");
+            to bottom,
+            rgba(255, 255, 255, 0.6),
+            rgba(0, 0, 0, 0.7) 70%
+        ),
+        url("./../../img/dist/safar-safarov-LKsHwgzyk7c-unsplash.jpg");
     background-size: cover;
-    background-position: center;jpg
-  }
+    background-position: center;
+    &:hover {
+        background-image: linear-gradient(
+                to bottom,
+                rgba(255, 255, 255, 0.6),
+                rgba(0, 0, 0, 0.7) 0%
+            ),
+            url("./../../img/dist/safar-safarov-LKsHwgzyk7c-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+    }
 }
 #project-sam-2 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.6),
-      rgba(0, 0, 0, 0.7) 70%
-    ),
-    url("./../../img/dist/roman-synkevych-vXInUOv1n84-unsplash.png");
-  background-size: cover;
-  background-position: center;
-  &:hover {
     background-image: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.6),
-        rgba(0, 0, 0, 0.7) 0%
-      ),
-      url("./../../img/dist/roman-synkevych-vXInUOv1n84-unsplash.png");
+            to bottom,
+            rgba(255, 255, 255, 0.6),
+            rgba(0, 0, 0, 0.7) 70%
+        ),
+        url("./../../img/dist/roman-synkevych-vXInUOv1n84-unsplash.png");
     background-size: cover;
     background-position: center;
-  }
+    &:hover {
+        background-image: linear-gradient(
+                to bottom,
+                rgba(255, 255, 255, 0.6),
+                rgba(0, 0, 0, 0.7) 0%
+            ),
+            url("./../../img/dist/roman-synkevych-vXInUOv1n84-unsplash.png");
+        background-size: cover;
+        background-position: center;
+    }
 }
 #project-sam-3 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.6),
-      rgba(0, 0, 0, 0.7) 70%
-    ),
-    url("./../../img/dist/zan-BTzLUhq4z0U-unsplash.png");
-  background-size: cover;
-  background-position: center;
-  &:hover {
     background-image: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.6),
-        rgba(0, 0, 0, 0.7) 0%
-      ),
-      url("./../../img/dist/zan-BTzLUhq4z0U-unsplash.png");
+            to bottom,
+            rgba(255, 255, 255, 0.6),
+            rgba(0, 0, 0, 0.7) 70%
+        ),
+        url("./../../img/dist/zan-BTzLUhq4z0U-unsplash.png");
     background-size: cover;
     background-position: center;
-  }
+    &:hover {
+        background-image: linear-gradient(
+                to bottom,
+                rgba(255, 255, 255, 0.6),
+                rgba(0, 0, 0, 0.7) 0%
+            ),
+            url("./../../img/dist/zan-BTzLUhq4z0U-unsplash.png");
+        background-size: cover;
+        background-position: center;
+    }
 }
 #project-sam-4 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.6),
-      rgba(0, 0, 0, 0.7) 70%
-    ),
-    url("./../../img/dist/campaign-creators-8F4EX4Nw1yY-unsplash.png");
-  background-size: cover;
-  background-position: center;
-  &:hover {
     background-image: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.6),
-        rgba(0, 0, 0, 0.7) 0%
-      ),
-      url("./../../img/dist/campaign-creators-8F4EX4Nw1yY-unsplash.png");
+            to bottom,
+            rgba(255, 255, 255, 0.6),
+            rgba(0, 0, 0, 0.7) 70%
+        ),
+        url("./../../img/dist/campaign-creators-8F4EX4Nw1yY-unsplash.png");
     background-size: cover;
     background-position: center;
-  }
+    &:hover {
+        background-image: linear-gradient(
+                to bottom,
+                rgba(255, 255, 255, 0.6),
+                rgba(0, 0, 0, 0.7) 0%
+            ),
+            url("./../../img/dist/campaign-creators-8F4EX4Nw1yY-unsplash.png");
+        background-size: cover;
+        background-position: center;
+    }
 }
 #project-sam-5 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.6),
-      rgba(0, 0, 0, 0.7) 70%
-    ),
-    url("./../../img/dist/oscar-nord-MuJHwDHbXUk-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-  &:hover {
     background-image: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.6),
-        rgba(0, 0, 0, 0.7) 0%
-      ),
-      url("./../../img/dist/oscar-nord-MuJHwDHbXUk-unsplash.jpg");
+            to bottom,
+            rgba(255, 255, 255, 0.6),
+            rgba(0, 0, 0, 0.7) 70%
+        ),
+        url("./../../img/dist/oscar-nord-MuJHwDHbXUk-unsplash.jpg");
     background-size: cover;
     background-position: center;
-  }
+    &:hover {
+        background-image: linear-gradient(
+                to bottom,
+                rgba(255, 255, 255, 0.6),
+                rgba(0, 0, 0, 0.7) 0%
+            ),
+            url("./../../img/dist/oscar-nord-MuJHwDHbXUk-unsplash.jpg");
+        background-size: cover;
+        background-position: center;
+    }
 }
 #project-sam-6 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.6),
-      rgba(0, 0, 0, 0.7) 70%
-    ),
-    url("./../../img/dist/annie-spratt-QckxruozjRg-unsplash.png");
-  background-size: cover;
-  background-position: center;
-  &:hover {
     background-image: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.6),
-        rgba(0, 0, 0, 0.7) 0%
-      ),
-      url("./../../img/dist/annie-spratt-QckxruozjRg-unsplash.png");
+            to bottom,
+            rgba(255, 255, 255, 0.6),
+            rgba(0, 0, 0, 0.7) 70%
+        ),
+        url("./../../img/dist/annie-spratt-QckxruozjRg-unsplash.png");
     background-size: cover;
     background-position: center;
-  }
+    &:hover {
+        background-image: linear-gradient(
+                to bottom,
+                rgba(255, 255, 255, 0.6),
+                rgba(0, 0, 0, 0.7) 0%
+            ),
+            url("./../../img/dist/annie-spratt-QckxruozjRg-unsplash.png");
+        background-size: cover;
+        background-position: center;
+    }
 }
 
 // RESPONSIVE
 @media screen and (min-width: 576px) {
-  .user-infos {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    align-items: center;
-    justify-items: center;
-    margin-top: 20px;
-  }
-  .user-title {
-    display: none;
-  }
-  #user-port-img {
-    display: block;
-  }
-  #user-port-img img {
-    border-radius: 100%;
-    width: 250px;
-    height: 250px;
-  }
-  .user-text {
-    padding: 0;
-    // display: block;
-    width: 100%;
-    justify-content: center;
-    font-size: 1rem;
-  }
+    .user-infos {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        align-items: center;
+        justify-items: center;
+        margin-top: 20px;
+    }
+    .user-title {
+        display: none;
+    }
+    #user-port-img {
+        display: block;
+    }
+    #user-port-img img {
+        border-radius: 100%;
+        width: 250px;
+        height: 250px;
+    }
+    .user-text {
+        padding: 0;
+        // display: block;
+        width: 100%;
+        justify-content: center;
+        font-size: 1rem;
+    }
 }
 @media screen and (min-width: 992px) {
-  #user-port-img img {
-    width: 350px;
-    height: 350px;
-  }
+    #user-port-img img {
+        width: 350px;
+        height: 350px;
+    }
 }
