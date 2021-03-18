@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Projet Hackaton</title>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
@@ -65,7 +66,7 @@
         </div>
         <h1 class="title">Derniers Projets des élèves</h1>
         <section id="last-project" class="portfolio">
-            <article id="last-project-1" class="card">
+            <article data-aos="fade-right" data-aos-duration="1000" id="last-project-1" class="card">
                 <div class="body-card">
                     <a href="project.html">
                         <h2>Section</h2>
@@ -74,7 +75,7 @@
                     </a>
                 </div>
             </article>
-            <article id="last-project-2" class="card">
+            <article data-aos="fade-up" data-aos-duration="1000" id="last-project-2" class="card">
                 <div class="body-card">
                     <a href="project.html">
                         <h2>Section</h2>
@@ -83,7 +84,7 @@
                     </a>
                 </div>
             </article>
-            <article id="last-project-3" class="card">
+            <article data-aos="fade-left" data-aos-duration="1000" id="last-project-3" class="card">
                 <div class="body-card">
                     <a href="project.html">
                         <h2>Section</h2>
@@ -92,7 +93,7 @@
                     </a>
                 </div>
             </article>
-            <article id="last-project-4" class="card">
+            <article data-aos="fade-right" data-aos-duration="1000" data-aos-offset="500" id="last-project-4" class="card">
                 <div class="body-card">
                     <a href="project.html">
                         <h2>Section</h2>
@@ -101,7 +102,7 @@
                     </a>
                 </div>
             </article>
-            <article id="last-project-5" class="card">
+            <article data-aos="fade-up" data-aos-duration="1000" data-aos-offset="600" id="last-project-5" class="card">
                 <div class="body-card">
                     <a href="project.html">
                         <h2>Section</h2>
@@ -110,7 +111,7 @@
                     </a>
                 </div>
             </article>
-            <article id="last-project-6" class="card">
+            <article data-aos="fade-left" data-aos-duration="1000" data-aos-offset="700" id="last-project-6" class="card">
                 <div class="body-card">
                     <a href="project.html">
                         <h2>Section</h2>
@@ -122,28 +123,28 @@
         </section>
         <h1 class="title">Portfolio</h1>
         <section style="max-width: 1200px" class="portfolio">
-            <article id="dev" class="card">
+            <article data-aos="fade-right" data-aos-duration="1200" data-aos-offset="500" id="dev" class="card">
                 <div class="body-card">
                 <a href="portfolio-section-dev.html">
                     <h2>Web Devs</h2>
                 </a>
                 </div>
             </article>
-            <article id="design" class="card">
+            <article data-aos="fade-left" data-aos-duration="1200" data-aos-offset="600" id="design" class="card">
                 <div class="body-card">
                     <a href="portfolio-section-design.html">
                         <h2>Web Design</h2>
                     </a>
                 </div>
             </article>
-            <article id="cpw" class="card">
+            <article data-aos="fade-up" data-aos-duration="1000" data-aos-offset="500" id="cpw" class="card">
                 <div class="body-card">
                     <a href="portfolio-section-cpw.html">
                         <h2>Chef de Projet WebMarketing</h2>
                     </a>
                 </div>
             </article>
-            <article id="graph" class="card">
+            <article data-aos="fade-up" data-aos-duration="1000" data-aos-offset="500" id="graph" class="card">
                 <div class="body-card">
                     <a href="portfolio-section-graph.html">
                         <h2>Graphistes</h2>
@@ -234,6 +235,10 @@
             <p id="copyright">Copyright © All rights reserved 2021 Team 4</p>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="./assets/js/dist/scripts.min.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
