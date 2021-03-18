@@ -1,49 +1,50 @@
-body{
+body {
     background-color: $bg-body;
+    overflow-x: hidden;
 }
-.logo{
+.logo {
     text-align: center;
-    img{
+    img {
         width: 200px;
     }
 }
-.main-header{
+.main-header {
     display: flex;
     justify-content: center;
     align-self: center;
     color: aliceblue;
     padding: 20px 10px;
-    .burger-bar{
+    .burger-bar {
         padding: 25px;
-        &:hover{
+        &:hover {
             cursor: pointer;
         }
-        .first-line{
+        .first-line {
             width: 35px;
             height: 3px;
             background-color: $blue-fonce;
-            margin: 6px 0px ;
+            margin: 6px 0px;
             transition: 0.6s;
         }
-        .second-line{
+        .second-line {
             width: 35px;
             height: 3px;
             background-color: $blue-fonce;
-            margin: 6px 0px ;
+            margin: 6px 0px;
             transition: 0.6s;
         }
-        .third-line{
+        .third-line {
             width: 35px;
             height: 3px;
             background-color: $blue-noir;
-            margin: 6px 0px ;
+            margin: 6px 0px;
             transition: 0.6s;
         }
     }
-    .change-first-line{
-            -webkit-transform: rotate(-45deg) translate(-8px, 4px);
-            transform: rotate(-45deg) translate(-8px, 4px);
-            background-color: $blue-noir !important ;
+    .change-first-line {
+        -webkit-transform: rotate(-45deg) translate(-8px, 4px);
+        transform: rotate(-45deg) translate(-8px, 4px);
+        background-color: $blue-noir !important ;
     }
 
     .change-second-line {
@@ -52,11 +53,11 @@ body{
 
     .change-third-line {
         -webkit-transform: rotate(45deg) translate(-7px, -5px);
-        transform: rotate(45deg) translate(-7px, -5px);  
+        transform: rotate(45deg) translate(-7px, -5px);
     }
 }
 
-.main-menu{
+.main-menu {
     margin: 0px 20px;
     margin-bottom: 40px;
     text-align: center;
@@ -65,148 +66,146 @@ body{
     font-size: 24px;
     background-color: $blue-noir;
     border-radius: 0px 0px 50px 50px;
-    padding: 5px 0px;   
-    animation: drop 600ms ease-in-out forwards; 
+    padding: 5px 0px;
+    animation: drop 600ms ease-in-out forwards;
     transform-origin: top center;
 
     @keyframes drop {
         0% {
-            transform: scaleY(0)
+            transform: scaleY(0);
         }
         80% {
-            transform: scaleY(1.1)
+            transform: scaleY(1.1);
         }
         100% {
-            transform: scaleY(1)
+            transform: scaleY(1);
         }
-        
     }
 
-
-
-    li{
+    li {
         padding: 5px 0px;
     }
-    a{
+    a {
         color: $bg;
     }
-    .first-menu{
-        li{
+    .first-menu {
+        li {
             margin: 10px 0px;
-               a{
-                &:hover{
+            a {
+                &:hover {
                     text-decoration: underline;
                 }
-               }
-            .second-menu{
+            }
+            .second-menu {
                 font-family: $txt;
                 font-size: 16px;
-                li{
+                li {
                     padding: 5px;
-                    a{
-                        &:hover{
-                            color:rgb(0, 155, 163);
-                            text-decoration: none !important;   
+                    a {
+                        &:hover {
+                            color: rgb(0, 155, 163);
+                            text-decoration: none !important;
                         }
                     }
                 }
             }
         }
-    }   
+    }
 }
 
-.main-menu-show{
-    display: block; 
+.main-menu-show {
+    display: block;
 }
 
 /*===================================MEDIA QUERIES====================================================================================
 ================================================================================================================================*/
 @media screen and (min-width: 768px) {
-    
-    .web-container{
+    .web-container {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .burger-bar{
-         display: none;
-         transition: 0;
+    .burger-bar {
+        display: none;
+        transition: 0;
     }
-    .main-menu{
+    .main-menu {
         display: block;
         border-radius: 0px;
         background-color: transparent;
         animation: none;
 
-    .first-menu a{
-        color: $blue-noir;
-        display: inline;
-    }    
-    .second-menu{
-        display: none;
-        
+        .first-menu a {
+            color: $blue-noir;
+            display: inline;
+        }
+        .second-menu {
+            display: none;
+        }
+        #portfolio:hover .second-menu {
+            display: block;
+            transition: 2.6s;
+            position: absolute;
+            padding: 20px 0px;
+            left: 50%;
+            transform: translate(-50%);
+            background-color: #004f734b;
+            border-radius: 0px 0px 50px 50px;
+            border-top: transparent;
+            z-index: 1000;
+            li {
+                display: block;
+                margin: 0;
+                a {
+                    display: block;
+                    font-size: 20px;
+                    color: white;
+                    &:hover {
+                        color: rgb(0, 155, 163);
+                    }
+                }
+            }
+        }
+        li {
+            display: inline;
+            margin: 20px;
+            padding: 0px;
+            a {
+                padding-bottom: 20px;
+            }
+        }
+        .first-menu > li {
+            padding: 20px;
+        }
     }
-    #portfolio:hover .second-menu{
-         display: block;
-         transition: 2.6s;
-         position:absolute ;
-         padding: 20px 0px;
-         left: 50%;
-         transform: translate(-50% );
-         background-color: #004f734b;
-         border-radius: 0px 0px 50px 50px;
-         border-top: transparent;
-         z-index: 1000;
-         li{
-             display: block;
-             margin: 0;
-             a{
-                 display: block; 
-                 font-size: 20px;
-                 color: white;
-                 &:hover {
-                     color: rgb(0, 155, 163);
-                 }
-             }
-         }  
-    }
-    li{
-         display: inline;
-         margin:20px;
-         padding: 0px;
-         a{
-             padding-bottom: 20px;
-        } 
-    }
-    .first-menu>li{
-        padding: 20px;
-    }
- }}
+}
 
 @media screen and (min-width: 992px) {
-   .logo{
-       position: absolute;
-       left: 50px;
-   }
-    .burger-bar{
+    .logo {
+        position: absolute;
+        left: 50px;
+    }
+    .burger-bar {
         display: none;
         transition: 0;
     }
-    .main-menu{
+    .main-menu {
         display: block;
         border-radius: 0px;
         background-color: transparent;
         padding: 21px;
         animation: none;
-    .first-menu a{color: $blue-noir;}
-    li{
-        display: inline;
-        margin: 0px;
-        padding: 0;
-  }
+        .first-menu a {
+            color: $blue-noir;
+        }
+        li {
+            display: inline;
+            margin: 0px;
+            padding: 0;
+        }
 
-  .first-menu>li{
-      padding: 20px;
-  }
-
-}}
+        .first-menu > li {
+            padding: 20px;
+        }
+    }
+}
