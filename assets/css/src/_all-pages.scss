@@ -19,7 +19,7 @@
       rgba(240, 174, 84, 0.3),
       rgba(240, 174, 84, 0.3)
     ),
-    url("./../../img/src/bg-header.jpg");
+    url("./../../img/dist/bg-header.png");
   border: 10px solid $bg;
   background-size: cover;
   width: 100%;
@@ -44,6 +44,7 @@
   margin: auto;
 }
 .card {
+  box-shadow: $grey 10px 10px 10px;
   margin: 50px auto;
   min-width: 227px;
   min-height: 204px;
@@ -52,7 +53,7 @@
       rgba(255, 255, 255, 0.6),
       rgba(0, 0, 0, 0.7) 70%
     ),
-    url("./../../img/src/dev.jpg");
+    url("./../../img/dist/dev.jpg");
   background-size: cover;
   border-radius: 40px;
   display: flex;
@@ -63,12 +64,12 @@
         rgba(255, 255, 255, 0.6),
         rgba(0, 0, 0, 0.7) 0%
       ),
-      url("./../../img/src/dev.jpg");
+      url("./../../img/dist/dev.jpg");
     background-size: cover;
     border-radius: 40px;
     display: flex;
     transition: 0.5s;
-    box-shadow: $grey 10px 10px 10px;
+    transform: translateY(20px);
     &:hover .body-card {
       visibility: visible;
       transform: scale(1);
@@ -171,9 +172,9 @@ div.pagination {
   }
   .portfolio {
     gap : 50px;
-    margin: 0;
   }
   .card {
+    margin: 0;
     &:hover {
       &:hover .body-card {
         visibility: visible;
