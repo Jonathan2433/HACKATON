@@ -6,7 +6,9 @@
   border-radius: 50%;
   width: 246px;
   height: 246px;
-  border: 1px solid;
+  box-shadow: $grey 10px 10px 10px;
+
+  border: 1px solid $blue-fonce;
 }
 .user-title {
   margin-top: 20px;
