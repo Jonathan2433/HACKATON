@@ -158,32 +158,16 @@
         </section>
         <div class="main">
             <div id="newsletter">
-                <h4 class="title">Newsletter</h4>
+                <h4 class="title title-news">Newsletter</h4>
                 <form action="" class="news-inputs">
-                    <label class="news-name"
-                        >Nom / Prénom :
-                        <input
-                            type="text"
-                            name="news-name"
-                            id="news-name"
-                            placeholder="Votre prénom et nom ici "
-                        />
+                    <label class="news-name">Nom / Prénom :
+                        <input type="text" name="news-name" id="news-name" placeholder="Votre prénom et nom ici " />
                     </label>
                     <label class="news-name-mobile">
-                        <input
-                            type="text"
-                            name="news-name"
-                            id="news-name"
-                            placeholder="Nom prénom"
-                        />
+                        <input type="text" name="news-name" id="news-name" placeholder="Nom prénom" />
                     </label>
-                    <label class="news-mail"
-                        >E-mail:
-                        <input
-                            type="email"
-                            name="mail"
-                            placeholder="Votre email ici"
-                        />
+                    <label class="news-mail">E-mail:
+                        <input type="email" name="mail" placeholder="Votre email ici" />
                     </label>
                     <label class="news-mail-mobile">
                         <input type="email" name="mail" placeholder="E-mail:" />
@@ -197,10 +181,8 @@
                     <label class="check-mobile">
                         <input type="checkbox" name="conditions" id="conds" />
                         <span class="checkmark"></span>
-                        <span class="check-text"
-                            >J'accepte les conditions d'utilisations générales
-                            d'utilisation du site</span
-                        >
+                        <span class="check-text">J'accepte les conditions d'utilisations générales
+                            d'utilisation du site</span>
                     </label>
                     <div id="news-btn">S'inscrire</div>
                 </form>
@@ -210,16 +192,40 @@
         <footer>
             <div id="footer">
                 <div id="footer-head">
-                    <img
-                        src="./assets/img/src/logo-white.svg"
-                        alt="logo-campus"
-                        id="campus-log"
-                    />
-                    <ul id="foot-links">
-                        <li><a href="cgu.html">CGU</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="mention.html"> Mentions légales </a></li>
+                    <div id="campus-logo-mobile">
+                        <img src="./assets/img/src/logo-white.svg" alt="logo-campus" id="campus-log" />
+                    </div>
+                    <ul class="networks-icons-mobile">
+                        <li><a href="https://www.instagram.com/campusdulac/?hl=fr"><i
+                                    class="fab fa-instagram"></i></a>
+                        </li>
+                        <li><a href="https://www.facebook.com/campusdulac/"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li><a href="https://twitter.com/campusdulac?lang=fr"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li><a
+                                href="https://www.linkedin.com/company/campus-du-lac-formation-professionnelle/?originalSubdomain=fr"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
                     </ul>
+                    <div class="large-links">
+                        <ul class="networks-icons-large">
+                            <li><a href="https://www.instagram.com/campusdulac/?hl=fr"><i
+                                        class="fab fa-instagram"></i></a>
+                            </li>
+                            <li><a href="https://www.facebook.com/campusdulac/"><i
+                                        class="fab fa-facebook-f"></i></a> </li>
+                            <li><a href="https://twitter.com/campusdulac?lang=fr"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li><a
+                                    href="https://www.linkedin.com/company/campus-du-lac-formation-professionnelle/?originalSubdomain=fr"><i
+                                        class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                        <ul id="foot-links">
+                            <li><a href="cgu.html">CGU</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="mention.html"> Mentions légales </a></li>
+                        </ul>
+                    </div>
                     <ul>
                         <li>Campus Du lac Rive Gauche</li>
                         <li>10 Rue Rene Cassin</li>
@@ -235,10 +241,14 @@
                         <li>Telephone: 05 56 79 52 00</li>
                     </ul>
                 </div>
+                <p id="copyright">Copyright © All rights reserved 2021 Team 4</p>
             </div>
-            <p id="copyright">Copyright © All rights reserved 2021 Team 4</p>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="./assets/js/dist/scripts.min.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
