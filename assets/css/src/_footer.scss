@@ -366,6 +366,13 @@ footer ul {
         width: 50%;
         margin: 0;
     }
+    #foot-links {
+        display: flex;
+        flex-direction: column;
+        li {
+            margin: 10px auto;
+        }
+    }
 }
 
 // ANIM
